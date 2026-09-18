@@ -14,8 +14,8 @@ analysis/results_live.md
 # photos are yours or free to reuse.
 Savora_Menu_Catalog.pdf
 
-# Personal Claude Code permissions (launch.json is shared on purpose)
-.claude/settings.local.json
+# Claude Code's local settings folder
+.claude/
 
 # Python
 __pycache__/
