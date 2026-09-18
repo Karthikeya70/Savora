@@ -411,8 +411,9 @@ function renderHistory() {
   log.innerHTML = "";
   if (history.length === 0) {
     addMessage("bot",
-      'Ask me anything about the menu — allergens, spice level, diet restrictions, price, ' +
-      'or just "what\'s good for a first date?" I\'ll figure it out.'
+      "Can't decide what to order? Tell me what you're in the mood for, or what you'd rather " +
+      "avoid, and I'll suggest a few dishes. You can also ask about ingredients, allergens, " +
+      "spice level or price."
     );
     return;
   }
