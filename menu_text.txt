@@ -1,0 +1,1375 @@
+--- PAGE 1 ---
+Savora
+Know your food before you order.
+A structured, restaurant-verified menu-data layer that answers precise questions about what is in a
+dish, how it is made, and how it can be changed.
+What this document is
+A dummy menu dataset for one imaginary Indian multi-cuisine cafe, built to show how rich,
+structured, restaurant-verified menu data should look. It holds 40 dishes spanning street food,
+South & North Indian, biryani, Indo-Chinese, cafe and continental, drinks and desserts - a mix
+aimed at both younger and traditional diners. The structured data lives in
+savora_menu_dataset.json; this PDF is the human-readable view.
+The photo-honesty signal
+Restaurants often post glamorous photos that do not match the real plate. So every dish here
+declares whether its image is an ACTUAL PHOTO of that exact dish, a REPRESENTATIVE
+stand-in of a similar dish, or has NO VERIFIED PHOTO - each with a photo-to-reality match
+score. This is a core trust feature, not an afterthought.
+--- PAGE 2 ---
+How to read each dish card
+Field What it means
+Prominence How much of the dish the ingredient is: primary > secondary > minor > trace > garnish.
+Allergens - Contains Allergen classes the restaurant confirms are present.
+Allergens - May contain Cross-contact risk (shared oil/equipment), not deliberate ingredients.
+Allergens - Status true = confirmed by the restaurant; false = inferred/unconfirmed.
+actual_dish_photo = real photo of this exact dish; representative = stand-in of a similar dish;
+Photo type
+none = no verified photo.
+0-1 estimate of how well the photo matches what is actually served (the anti-'glamour photo'
+Photo-reality match
+trust signal).
+Customisation allowed Whether the kitchen will actually do this change (false = cannot, with reason).
+Markers
+Vegetarian (FSSAI green mark)
+Non-vegetarian (FSSAI brown mark)
+ACTUAL PHOTO Real photo of this exact dish
+REPRESENTATIVE Stand-in photo of a similar dish; match score shows how close
+NO VERIFIED PHOTO No confirmed image on file
+Photos are openly-licensed images used to populate this dummy dataset.
+Savora - dummy menu dataset - know your food before you order Page 2
+--- PAGE 3 ---
+CHAAT & STREET SNACKS
+Pani Puri Rs 60
+[MR01]
+Chaat & Street Snacks · also: Golgappa / Puchka / Gol Gappe
+BESTSELLER SPICY *** VEGAN JAIN OK
+Six crisp semolina shells served with spiced mint-coriander water (teekha
+pani), sweet tamarind-jaggery chutney, mashed potato and boiled
+chickpeas. Assembled and eaten one bite at a time. Spice and sweetness
+of the water can be set per guest.
+Serves: 1 (6 puris + water)
+Approx calories: 180 kcal
+Spice: Spicy (level 3/4) - adjustable
+Prep time: ~5 min
+Dietary: vegetarian, vegan, nut-free, jain-on-request
+Available: all-day
+ACTUAL PHOTO | photo-reality match:
+95%
+Real serving photo; closely matches what is
+served.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Semolina-wheat puri shells primary no gluten
+Spiced mint-coriander water primary no -
+Tamarind-jaggery chutney secondary yes -
+Boiled potato secondary yes -
+Boiled chickpeas secondary yes -
+Black salt & roasted cumin minor no -
+ALLERGENS
+Contains: gluten
+May contain (cross-contact): mustard
+Status: verified by kitchen
+PREPARATION
+assembled, no-cook (shells pre-fried) · made to order: yes
+Shells are deep-fried in shared oil with other fried snacks.
+CUSTOMISATIONS
+Customisation Allowed? Price
+Less spicy / sweet water Yes no charge
+No potato (Jain) Yes no charge
+Extra puris (2) Yes +Rs 20
+Savora - dummy menu dataset - know your food before you order Page 3
+--- PAGE 4 ---
+Veg Samosa Rs 40
+[MR02]
+Chaat & Street Snacks · also: Samosa
+BESTSELLER VEGAN
+Two hand-folded triangular pastries filled with spiced mashed potato,
+green peas and whole spices, deep-fried till golden. Served with mint
+chutney and tamarind chutney.
+Serves: 1 (2 pieces)
+Approx calories: 520 kcal
+Spice: Mild-Medium (level 2/4)
+Prep time: ~10 min
+Dietary: vegetarian, vegan, nut-free
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 95%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Refined-wheat pastry (maida) primary no gluten
+Potato primary no -
+Green peas secondary no -
+Cumin, coriander, garam masala minor no -
+Frying oil secondary no -
+ALLERGENS
+Contains: gluten
+Status: verified by kitchen
+PREPARATION
+deep-fried · made to order: no (batch-prepared)
+Fried in a shared fryer also used for pakora.
+CUSTOMISATIONS
+Customisation Allowed? Price
+Air-fried instead of deep-fried No -
+Extra chutney Yes +Rs 10
+Savora - dummy menu dataset - know your food before you order Page 4
+--- PAGE 5 ---
+Samosa Chaat Rs 80
+[MR03]
+Chaat & Street Snacks
+SPICY ***
+A samosa broken and smothered with warm white-pea ragda, whisked
+yogurt, tamarind and mint chutney, onions, sev and chaat masala.
+Serves: 1 (1 bowl)
+Approx calories: 420 kcal
+Spice: Spicy (level 3/4) - adjustable
+Prep time: ~8 min
+Dietary: vegetarian, contains-dairy, nut-free
+Available: all-day
+REPRESENTATIVE | photo-reality match: 55%
+Stand-in photo of a plain samosa; actual chaat
+looks different (saucy bowl).
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Samosa primary no gluten
+White-pea / chickpea ragda primary no -
+Whisked yogurt secondary yes dairy
+Tamarind & mint chutney secondary yes -
+Fine sev (gram-flour noodles) minor yes -
+Onion minor yes -
+ALLERGENS
+Contains: gluten, dairy
+May contain (cross-contact): mustard
+Status: verified by kitchen
+PREPARATION
+assembled, deep-fried base · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+No yogurt (make vegan) Yes no charge
+No onion Yes no charge
+Extra sev Yes +Rs 10
+Savora - dummy menu dataset - know your food before you order Page 5
+--- PAGE 6 ---
+Pav Bhaji Rs 140
+[MR04]
+Chaat & Street Snacks
+BESTSELLER SPICY ***
+A rich mash of potato, tomato, peas and capsicum cooked with pav-bhaji
+masala and finished with butter, served with two soft pav toasted in butter,
+chopped onion and lemon.
+Serves: 1 (2 pav + bhaji)
+Approx calories: 650 kcal
+Spice: Spicy (level 3/4) - adjustable
+Prep time: ~15 min
+Dietary: vegetarian, contains-dairy, nut-free
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 92%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Pav (wheat bread rolls) primary no gluten, soy
+Potato primary no -
+Tomato primary no -
+Green peas & capsicum secondary no -
+Butter secondary yes dairy
+Pav-bhaji masala minor no -
+ALLERGENS
+Contains: gluten, dairy
+May contain (cross-contact): soy
+Status: verified by kitchen
+PREPARATION
+sauteed, griddle-toasted · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+No butter / less butter Yes no charge
+Extra pav (2) Yes +Rs 25
+Cheese pav bhaji Yes +Rs 40
+Savora - dummy menu dataset - know your food before you order Page 6
+--- PAGE 7 ---
+Mixed Veg Pakora Rs 90
+[MR05]
+Chaat & Street Snacks · also: Pakode / Bhajiya
+VEGAN
+Onion, potato and spinach dipped in spiced besan (gram flour) batter and
+fried crisp. Served with mint chutney. Naturally gluten-free batter.
+Serves: 2 (approx 10 pieces)
+Approx calories: 480 kcal
+Spice: Mild-Medium (level 2/4)
+Prep time: ~12 min
+Dietary: vegetarian, vegan, gluten-free-recipe, nut-free
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 90%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Gram flour (besan) batter primary no -
+Onion primary yes -
+Potato secondary yes -
+Spinach minor yes -
+Frying oil secondary no -
+ALLERGENS
+Contains: none declared
+May contain (cross-contact): gluten
+Status: verified by kitchen
+PREPARATION
+deep-fried · made to order: yes
+Fryer shared with samosa (gluten) — cross-contact possible.
+CUSTOMISATIONS
+Customisation Allowed? Price
+Onion only Yes no charge
+Extra green chutney Yes +Rs 10
+Savora - dummy menu dataset - know your food before you order Page 7
+--- PAGE 8 ---
+Khaman Dhokla Rs 70
+[MR06]
+Chaat & Street Snacks · also: Dhokla
+VEGAN
+Light, spongy steamed cakes of fermented gram flour, topped with a
+tempering of mustard seeds, curry leaves and green chilli, finished with
+sugar-lemon water and coriander. Steamed, not fried.
+Serves: 1 (6 pieces)
+Approx calories: 250 kcal
+Spice: Mild (level 1/4)
+Prep time: ~10 min
+Dietary: vegetarian, vegan, gluten-free-recipe, nut-free, low-oil
+Available: breakfast,all-day
+ACTUAL PHOTO | photo-reality match: 93%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Gram flour (besan) primary no -
+Mustard-seed & curry-leaf tempering secondary yes mustard
+Green chilli minor yes -
+Sugar-lemon water minor no -
+ALLERGENS
+Contains: mustard
+Status: verified by kitchen
+PREPARATION
+steamed · made to order: no (batch-prepared)
+CUSTOMISATIONS
+Customisation Allowed? Price
+No tempering (mustard-free) Yes no charge
+Extra green chutney Yes +Rs 10
+SOUTH INDIAN
+Savora - dummy menu dataset - know your food before you order Page 8
+--- PAGE 9 ---
+Masala Dosa Rs 120
+[MR07]
+South Indian
+BESTSELLER
+A large, crisp fermented rice-and-lentil crepe wrapped around a spiced
+potato filling, served with sambar and coconut & tomato chutneys.
+Cooked on a griddle.
+Serves: 1 (1 large dosa + sides)
+Approx calories: 410 kcal
+Spice: Medium (level 2/4) - adjustable
+Prep time: ~12 min
+Dietary: vegetarian, gluten-free-recipe, can-be-vegan, contains-coconut
+Available: breakfast,all-day
+ACTUAL PHOTO | photo-reality match:
+95%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Fermented rice & urad-lentil batter primary no -
+Spiced potato filling primary yes -
+Sambar (lentil-vegetable stew) secondary yes -
+Coconut chutney secondary yes tree_nut
+Ghee/oil on griddle minor yes dairy
+ALLERGENS
+Contains: tree_nut
+May contain (cross-contact): dairy
+Status: verified by kitchen
+Coconut chutney; ghee used on griddle unless oil requested.
+PREPARATION
+griddle-cooked · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Cook in oil (no ghee) — vegan Yes no charge
+No potato (plain) Yes -Rs 20
+Extra sambar Yes +Rs 20
+Savora - dummy menu dataset - know your food before you order Page 9
+--- PAGE 10 ---
+Plain Sada Dosa Rs 90
+[MR08]
+South Indian
+JAIN OK
+The same crisp fermented crepe as the masala dosa but without the
+potato filling — lighter, served with sambar and chutneys.
+Serves: 1 (1 large dosa + sides)
+Approx calories: 300 kcal
+Spice: Mild (level 1/4) - adjustable
+Prep time: ~10 min
+Dietary: vegetarian, gluten-free-recipe, can-be-vegan, jain-on-request
+Available: breakfast,all-day
+REPRESENTATIVE | photo-reality match:
+80%
+Photo shows masala dosa; plain dosa looks similar
+without the filling.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Fermented rice & urad-lentil batter primary no -
+Sambar secondary yes -
+Coconut chutney secondary yes tree_nut
+Ghee/oil on griddle minor yes dairy
+ALLERGENS
+Contains: tree_nut
+May contain (cross-contact): dairy
+Status: verified by kitchen
+PREPARATION
+griddle-cooked · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Cook in oil (no ghee) — vegan Yes no charge
+No coconut chutney (nut-free) Yes no charge
+Savora - dummy menu dataset - know your food before you order Page 10
+--- PAGE 11 ---
+Idli Sambar Rs 80
+[MR09]
+South Indian
+VEGAN
+Three soft steamed cakes of fermented rice and urad lentil, served with
+sambar and coconut chutney. Light, oil-free and easy to digest.
+Serves: 1 (3 idli + sides)
+Approx calories: 280 kcal
+Spice: Mild (level 1/4) - adjustable
+Prep time: ~8 min
+Dietary: vegetarian, vegan, gluten-free-recipe, low-oil, contains-coconut
+Available: breakfast,all-day
+ACTUAL PHOTO | photo-reality match:
+93%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Steamed rice & urad-lentil batter primary no -
+Sambar secondary yes -
+Coconut chutney secondary yes tree_nut
+ALLERGENS
+Contains: tree_nut
+Status: verified by kitchen
+PREPARATION
+steamed · made to order: no (batch-prepared)
+CUSTOMISATIONS
+Customisation Allowed? Price
+No coconut chutney (nut-free) Yes no charge
+Extra idli (2) Yes +Rs 30
+Podi + ghee idli Yes +Rs 20
+NORTH INDIAN MAINS
+Savora - dummy menu dataset - know your food before you order Page 11
+--- PAGE 12 ---
+Dal Makhani Rs 220
+[MR10]
+North Indian Mains
+BESTSELLER JAIN OK HIGH PROTEIN
+Whole black urad lentils and kidney beans simmered overnight, finished
+with butter, cream and tomato. Rich and mildly spiced. Best with naan or
+rice.
+Serves: 2 (300 g (bowl))
+Approx calories: 480 kcal
+Spice: Medium (level 2/4) - adjustable
+Prep time: ~15 min
+Dietary: vegetarian, contains-dairy, high-protein, nut-free, jain-on-request
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 94%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Whole black urad lentil primary no -
+Kidney beans (rajma) secondary no -
+Tomato secondary no -
+Butter secondary yes dairy
+Fresh cream secondary yes dairy
+Ginger-garlic minor yes -
+ALLERGENS
+Contains: dairy
+Status: verified by kitchen
+PREPARATION
+slow-simmered · made to order: no (batch-prepared)
+CUSTOMISATIONS
+Customisation Allowed? Price
+Less cream / less butter Yes no charge
+No garlic-onion (Jain) Yes no charge
+Vegan (no butter/cream) (Base is pre-made with dairy; cannot be made vegan
+No -
+to order.)
+Savora - dummy menu dataset - know your food before you order Page 12
+--- PAGE 13 ---
+Dal Tadka Rs 180
+[MR11]
+North Indian Mains
+JAIN OK HIGH PROTEIN
+Toor and moong lentils cooked soft and finished with a sizzling tempering
+of ghee, cumin, garlic, dried chilli and tomato. Lighter than dal makhani.
+Serves: 2 (300 g (bowl))
+Approx calories: 320 kcal
+Spice: Medium (level 2/4) - adjustable
+Prep time: ~12 min
+Dietary: vegetarian, can-be-vegan, high-protein, nut-free, jain-on-request
+Available: all-day
+REPRESENTATIVE | photo-reality match: 50%
+Stand-in dal photo; dal tadka is thinner and yellow,
+looks noticeably different.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Toor & moong lentils primary no -
+Ghee tempering secondary yes dairy
+Garlic & cumin minor yes -
+Tomato minor no -
+ALLERGENS
+Contains: dairy
+Status: verified by kitchen
+Dairy only from ghee — request oil tempering to make vegan.
+PREPARATION
+boiled, tempered · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Oil tempering (vegan) Yes no charge
+No garlic (Jain) Yes no charge
+Savora - dummy menu dataset - know your food before you order Page 13
+--- PAGE 14 ---
+Kadai Paneer Rs 260
+[MR12]
+North Indian Mains
+BESTSELLER SPICY *** HIGH PROTEIN
+Cubes of paneer tossed with onion, capsicum and tomato in a freshly
+ground coriander-pepper kadai masala. Semi-dry and aromatic.
+Serves: 2 (300 g (bowl))
+Approx calories: 520 kcal
+Spice: Spicy (level 3/4) - adjustable
+Prep time: ~15 min
+Dietary: vegetarian, contains-dairy, high-protein, nut-free
+Available: all-day
+ACTUAL PHOTO | photo-reality match:
+92%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Paneer (cottage cheese) primary no dairy
+Capsicum & onion secondary yes -
+Tomato secondary no -
+Kadai masala (coriander, chilli, pepper) minor no -
+Cream minor yes dairy
+ALLERGENS
+Contains: dairy
+Status: verified by kitchen
+PREPARATION
+sauteed, gravy-simmered · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Less spicy Yes no charge
+Tofu instead of paneer (vegan) Yes +Rs 30
+Extra paneer Yes +Rs 60
+Savora - dummy menu dataset - know your food before you order Page 14
+--- PAGE 15 ---
+Paneer Butter Masala Rs 270
+[MR13]
+North Indian Mains
+BESTSELLER JAIN OK HIGH PROTEIN
+Soft paneer in a smooth makhani gravy of tomato, butter, cream and
+cashew, mildly sweet and rich. The crowd-pleaser, very mild.
+Serves: 2 (300 g (bowl))
+Approx calories: 560 kcal
+Spice: Mild (level 1/4) - adjustable
+Prep time: ~15 min
+Dietary: vegetarian, contains-dairy, contains-nuts, high-protein
+Available: all-day
+REPRESENTATIVE | photo-reality match:
+55%
+Stand-in paneer photo; butter masala gravy is
+smoother, orange and creamier.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Paneer primary no dairy
+Tomato primary no -
+Butter secondary yes dairy
+Cream secondary yes dairy
+Cashew paste secondary no tree_nut
+ALLERGENS
+Contains: dairy, tree_nut
+Status: verified by kitchen
+Cashew is blended into the gravy and CANNOT be removed.
+PREPARATION
+gravy-simmered · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Make it spicier Yes no charge
+Nut-free version (Cashew is part of the base gravy; not possible to remove on
+No -
+order.)
+No garlic-onion (Jain) Yes no charge
+Savora - dummy menu dataset - know your food before you order Page 15
+--- PAGE 16 ---
+Chole Bhature Rs 160
+[MR14]
+North Indian Mains
+BESTSELLER SPICY *** HIGH PROTEIN
+A robust, tangy chickpea curry (chole) served with two large, deep-fried
+leavened breads (bhature), with onion, pickle and green chilli.
+Serves: 1 (2 bhature + chole)
+Approx calories: 780 kcal
+Spice: Spicy (level 3/4) - adjustable
+Prep time: ~15 min
+Dietary: vegetarian, contains-dairy, high-protein, nut-free
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 93%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Chickpeas (chole) primary no -
+Refined wheat flour bhatura primary no gluten
+Yogurt (in bhatura dough) minor no dairy
+Onion-tomato masala secondary no -
+ALLERGENS
+Contains: gluten, dairy
+Status: verified by kitchen
+PREPARATION
+deep-fried bread, simmered curry · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Extra bhatura Yes +Rs 40
+Less oil chole Yes no charge
+RICE & BIRYANI
+Savora - dummy menu dataset - know your food before you order Page 16
+--- PAGE 17 ---
+Chicken Biryani Rs 280
+[MR15]
+Rice & Biryani · also: Hyderabadi Chicken Biryani
+BESTSELLER SPICY *** HIGH PROTEIN
+Long-grain basmati rice dum-cooked in layers with yogurt-marinated
+chicken, fried onions, mint and saffron. Served with raita and salan.
+Serves: 1 (450 g + raita)
+Approx calories: 720 kcal
+Spice: Spicy (level 3/4) - adjustable
+Prep time: ~20 min
+Dietary: non-vegetarian, contains-dairy, high-protein
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 95%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Basmati rice primary no -
+Chicken (bone-in) primary no -
+Yogurt marinade secondary yes dairy
+Fried onions secondary no -
+Whole spices & saffron minor no -
+Raita (side) minor yes dairy
+ALLERGENS
+Contains: dairy
+May contain (cross-contact): tree_nut
+Status: verified by kitchen
+Garnished with fried cashew on some days.
+PREPARATION
+dum (sealed slow-cook) · made to order: no (batch-prepared)
+CUSTOMISATIONS
+Customisation Allowed? Price
+Boneless chicken Yes +Rs 40
+Extra spicy Yes no charge
+No raita Yes no charge
+Savora - dummy menu dataset - know your food before you order Page 17
+--- PAGE 18 ---
+Veg Dum Biryani Rs 230
+[MR16]
+Rice & Biryani
+SPICY ***
+Basmati rice dum-cooked with carrot, beans, paneer and potato in biryani
+masala with fried onions and mint. Served with raita.
+Serves: 1 (450 g + raita)
+Approx calories: 560 kcal
+Spice: Spicy (level 3/4) - adjustable
+Prep time: ~20 min
+Dietary: vegetarian, contains-dairy, high-fibre
+Available: all-day
+REPRESENTATIVE | photo-reality match: 65%
+Stand-in chicken-biryani photo; veg biryani has no
+chicken leg.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Basmati rice primary no -
+Mixed vegetables primary yes -
+Paneer secondary yes dairy
+Yogurt secondary yes dairy
+Fried onions & saffron minor no -
+ALLERGENS
+Contains: dairy
+May contain (cross-contact): tree_nut
+Status: verified by kitchen
+PREPARATION
+dum (sealed slow-cook) · made to order: no (batch-prepared)
+CUSTOMISATIONS
+Customisation Allowed? Price
+No paneer Yes -Rs 20
+Extra raita Yes +Rs 20
+Savora - dummy menu dataset - know your food before you order Page 18
+--- PAGE 19 ---
+Veg Fried Rice Rs 160
+[MR17]
+Rice & Biryani
+VEGAN
+Day-cooked rice stir-fried on high heat with carrot, beans, cabbage, spring
+onion, soy and a touch of vinegar. Indo-Chinese style.
+Serves: 1 (350 g)
+Approx calories: 420 kcal
+Spice: Medium (level 2/4) - adjustable
+Prep time: ~12 min
+Dietary: vegetarian, vegan, contains-soy
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 90%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Rice primary no -
+Mixed vegetables secondary yes -
+Soy sauce secondary no soy, gluten
+Garlic & spring onion minor yes -
+ALLERGENS
+Contains: soy, gluten
+May contain (cross-contact): sesame
+Status: verified by kitchen
+Soy sauce contains wheat (gluten).
+PREPARATION
+wok stir-fried · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+No garlic Yes no charge
+Schezwan style Yes +Rs 20
+Add paneer Yes +Rs 40
+Savora - dummy menu dataset - know your food before you order Page 19
+--- PAGE 20 ---
+Schezwan Fried Rice Rs 180
+[MR18]
+Rice & Biryani
+SPICY **** VEGAN
+Veg fried rice fired up with house schezwan sauce — hot, garlicky and
+tangy. A Gen-Z favourite.
+Serves: 1 (350 g)
+Approx calories: 460 kcal
+Spice: Very Spicy (level 4/4) - adjustable
+Prep time: ~12 min
+Dietary: vegetarian, vegan, contains-soy, very-spicy
+Available: all-day
+REPRESENTATIVE | photo-reality match: 70%
+Stand-in veg fried-rice photo; schezwan version is
+redder/oilier.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Rice primary no -
+Schezwan sauce (red chilli, garlic) primary no -
+Mixed vegetables secondary yes -
+Soy sauce secondary no soy, gluten
+ALLERGENS
+Contains: soy, gluten
+May contain (cross-contact): sesame
+Status: verified by kitchen
+PREPARATION
+wok stir-fried · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Less spicy Yes no charge
+Add paneer / chicken Yes +Rs 50
+INDO-CHINESE & MOMOS
+Savora - dummy menu dataset - know your food before you order Page 20
+--- PAGE 21 ---
+Steamed Veg Momos Rs 110
+[MR19]
+Indo-Chinese & Momos
+BESTSELLER VEGAN
+Six hand-pleated flour dumplings filled with finely chopped cabbage,
+carrot and spring onion, steamed and served with fiery red momo
+chutney.
+Serves: 1 (6 pieces)
+Approx calories: 300 kcal
+Spice: Mild (chutney spicy) (level 1/4) - adjustable
+Prep time: ~15 min
+Dietary: vegetarian, vegan, low-oil
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 93%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Refined-wheat wrapper primary no gluten
+Cabbage & carrot filling primary no -
+Spring onion & garlic minor yes -
+Red momo chutney (side) secondary yes -
+ALLERGENS
+Contains: gluten
+May contain (cross-contact): soy
+Status: verified by kitchen
+PREPARATION
+steamed · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Pan-fried instead of steamed Yes +Rs 20
+Extra chutney Yes +Rs 10
+Savora - dummy menu dataset - know your food before you order Page 21
+--- PAGE 22 ---
+Paneer Momos Rs 130
+[MR20]
+Indo-Chinese & Momos
+Soft steamed dumplings stuffed with grated paneer, onion and pepper,
+served with red momo chutney.
+Serves: 1 (6 pieces)
+Approx calories: 360 kcal
+Spice: Mild (chutney spicy) (level 1/4) - adjustable
+Prep time: ~15 min
+Dietary: vegetarian, contains-dairy
+Available: all-day
+REPRESENTATIVE | photo-reality match: 85%
+Stand-in veg-momo photo; paneer momos look
+near-identical from outside.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Refined-wheat wrapper primary no gluten
+Paneer filling primary no dairy
+Onion & pepper minor yes -
+ALLERGENS
+Contains: gluten, dairy
+May contain (cross-contact): soy
+Status: verified by kitchen
+PREPARATION
+steamed · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Pan-fried Yes +Rs 20
+Tandoori momos Yes +Rs 40
+Savora - dummy menu dataset - know your food before you order Page 22
+--- PAGE 23 ---
+Veg Manchurian (Dry) Rs 170
+[MR21]
+Indo-Chinese & Momos
+SPICY *** VEGAN
+Deep-fried cabbage-carrot dumplings tossed in a glossy soy-garlic-chilli
+sauce with onion and capsicum. Served dry as a starter.
+Serves: 2 (8 pieces)
+NO VERIFIED Approx calories: 430 kcal
+PHOTO Spice: Spicy (level 3/4) - adjustable
+Prep time: ~15 min
+Dietary: vegetarian, vegan, contains-soy
+Available: all-day
+No verified in-house photo yet — item shown
+without an image.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Cabbage-carrot balls (with flour) primary no gluten
+Soy-garlic-chilli sauce primary no soy, gluten
+Capsicum & onion secondary yes -
+Cornflour & frying oil minor no -
+ALLERGENS
+Contains: gluten, soy
+May contain (cross-contact): sesame
+Status: verified by kitchen
+PREPARATION
+deep-fried, wok-tossed · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Gravy style Yes no charge
+Less spicy Yes no charge
+Savora - dummy menu dataset - know your food before you order Page 23
+--- PAGE 24 ---
+Chilli Paneer (Dry) Rs 210
+[MR22]
+Indo-Chinese & Momos
+BESTSELLER SPICY ***
+Batter-fried paneer cubes wok-tossed with onion, capsicum, green chilli
+and a soy-chilli sauce. A Gen-Z starter favourite.
+Serves: 2 (250 g)
+NO VERIFIED Approx calories: 520 kcal
+PHOTO Spice: Spicy (level 3/4) - adjustable
+Prep time: ~15 min
+Dietary: vegetarian, contains-dairy, contains-soy
+Available: all-day
+No verified in-house photo yet.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Paneer primary no dairy
+Cornflour-maida batter secondary no gluten
+Soy-chilli sauce primary no soy, gluten
+Capsicum, onion, green chilli secondary yes -
+ALLERGENS
+Contains: dairy, gluten, soy
+May contain (cross-contact): sesame
+Status: verified by kitchen
+PREPARATION
+fried, wok-tossed · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Gravy style Yes no charge
+Tofu (vegan) Yes +Rs 20
+Savora - dummy menu dataset - know your food before you order Page 24
+--- PAGE 25 ---
+Hakka Noodles (Veg) Rs 160
+[MR23]
+Indo-Chinese & Momos
+Boiled wheat noodles wok-tossed with julienned vegetables, soy and
+pepper. Light, smoky and quick.
+Serves: 1 (350 g)
+NO VERIFIED Approx calories: 440 kcal
+PHOTO Spice: Medium (level 2/4) - adjustable
+Prep time: ~12 min
+Dietary: vegetarian, contains-soy
+Available: all-day
+No verified in-house photo yet.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Wheat noodles primary no gluten
+Mixed vegetables secondary yes -
+Soy sauce secondary no soy, gluten
+Garlic & pepper minor yes -
+ALLERGENS
+Contains: gluten, soy
+May contain (cross-contact): sesame, egg
+Status: verified by kitchen
+Some noodle brands contain egg — check daily stock.
+PREPARATION
+boiled, wok stir-fried · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Schezwan / garlic style Yes +Rs 20
+Add paneer / chicken Yes +Rs 50
+ROLLS & WRAPS
+Savora - dummy menu dataset - know your food before you order Page 25
+--- PAGE 26 ---
+Chicken Kathi Roll Rs 160
+[MR24]
+Rolls & Wraps
+BESTSELLER SPICY *** HIGH PROTEIN
+Flaky paratha coated with egg, filled with spiced grilled chicken, onions,
+green chutney and a squeeze of lemon, rolled to order.
+Serves: 1 (1 roll)
+Approx calories: 520 kcal
+Spice: Spicy (level 3/4) - adjustable
+Prep time: ~12 min
+Dietary: non-vegetarian, high-protein
+Available: all-day
+ACTUAL PHOTO | photo-reality match:
+90%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Wheat paratha primary no gluten
+Egg coating secondary yes egg
+Spiced chicken primary no -
+Onion & green chutney secondary yes -
+ALLERGENS
+Contains: gluten, egg
+May contain (cross-contact): dairy
+Status: verified by kitchen
+PREPARATION
+griddle-cooked, assembled · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+No egg coating Yes no charge
+Extra spicy Yes no charge
+Double chicken Yes +Rs 60
+Savora - dummy menu dataset - know your food before you order Page 26
+--- PAGE 27 ---
+Paneer Kathi Roll Rs 150
+[MR25]
+Rolls & Wraps
+HIGH PROTEIN
+Paratha filled with marinated paneer tikka, onions, capsicum and mint
+chutney, rolled to order. Vegetarian version of the kathi roll.
+Serves: 1 (1 roll)
+Approx calories: 480 kcal
+Spice: Medium (level 2/4) - adjustable
+Prep time: ~12 min
+Dietary: vegetarian, contains-dairy, high-protein
+Available: all-day
+REPRESENTATIVE | photo-reality match:
+85%
+Stand-in chicken-roll photo; rolled paneer version
+looks very similar.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Wheat paratha primary no gluten
+Paneer tikka primary no dairy
+Yogurt marinade minor no dairy
+Onion, capsicum, mint chutney secondary yes -
+ALLERGENS
+Contains: gluten, dairy
+Status: verified by kitchen
+PREPARATION
+griddle-cooked, assembled · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+No onion Yes no charge
+Add cheese Yes +Rs 30
+BREADS
+Savora - dummy menu dataset - know your food before you order Page 27
+--- PAGE 28 ---
+Butter Naan Rs 45
+[MR26]
+Breads
+JAIN OK
+A pillowy refined-flour flatbread baked in the tandoor and brushed with
+butter. Pairs with any gravy.
+Serves: 1 (1 piece)
+Approx calories: 300 kcal
+Spice: Not spicy (level 0/4)
+Prep time: ~8 min
+Dietary: vegetarian, contains-dairy
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 90%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Refined wheat flour (maida) primary no gluten
+Yogurt/milk in dough secondary no dairy
+Butter brush secondary yes dairy
+ALLERGENS
+Contains: gluten, dairy
+Status: verified by kitchen
+PREPARATION
+tandoor-baked · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+No butter (dry naan) Yes no charge
+Add garlic Yes +Rs 15
+Savora - dummy menu dataset - know your food before you order Page 28
+--- PAGE 29 ---
+Garlic Naan Rs 60
+[MR27]
+Breads
+BESTSELLER
+Soft naan studded with chopped garlic and coriander, brushed with butter.
+Fragrant and a Gen-Z pairing favourite.
+Serves: 1 (1 piece)
+Approx calories: 320 kcal
+Spice: Not spicy (level 0/4)
+Prep time: ~8 min
+Dietary: vegetarian, contains-dairy
+Available: all-day
+REPRESENTATIVE | photo-reality match: 80%
+Stand-in plain-naan photo; garlic naan has visible
+garlic flecks.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Refined wheat flour (maida) primary no gluten
+Garlic secondary no -
+Butter secondary yes dairy
+ALLERGENS
+Contains: gluten, dairy
+Status: verified by kitchen
+PREPARATION
+tandoor-baked · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Extra garlic Yes no charge
+Cheese garlic naan Yes +Rs 40
+Savora - dummy menu dataset - know your food before you order Page 29
+--- PAGE 30 ---
+Tandoori Roti Rs 30
+[MR28]
+Breads
+JAIN OK
+A rustic whole-wheat flatbread baked crisp on the tandoor walls. Lower in
+fat than naan and dairy-free if served plain.
+Serves: 1 (1 piece)
+Approx calories: 160 kcal
+Spice: Not spicy (level 0/4)
+Prep time: ~6 min
+Dietary: vegetarian, can-be-vegan, whole-grain
+Available: all-day
+ACTUAL PHOTO | photo-reality match:
+85%
+Real serving photo (chapati/roti).
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Whole wheat flour (atta) primary no gluten
+Butter (optional brush) minor yes dairy
+ALLERGENS
+Contains: gluten
+May contain (cross-contact): dairy
+Status: verified by kitchen
+Dairy only if buttered — ask for plain to keep it vegan.
+PREPARATION
+tandoor-baked · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Plain (no butter) — vegan Yes no charge
+Butter roti Yes +Rs 10
+CAFE & CONTINENTAL
+Savora - dummy menu dataset - know your food before you order Page 30
+--- PAGE 31 ---
+Margherita Pizza Rs 240
+[MR29]
+Cafe & Continental
+BESTSELLER
+Hand-stretched thin crust topped with tomato sauce, mozzarella and fresh
+basil, baked in a deck oven. 8 inch.
+Serves: 1 (8" (6 slices))
+Approx calories: 720 kcal
+Spice: Not spicy (level 0/4)
+Prep time: ~15 min
+Dietary: vegetarian, contains-dairy
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 88%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Wheat pizza base primary no gluten
+Mozzarella cheese primary no dairy
+Tomato sauce secondary no -
+Basil garnish yes -
+ALLERGENS
+Contains: gluten, dairy
+May contain (cross-contact): soy
+Status: verified by kitchen
+PREPARATION
+oven-baked · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Vegan cheese Yes +Rs 60
+Whole-wheat base Yes +Rs 30
+Extra cheese Yes +Rs 50
+Savora - dummy menu dataset - know your food before you order Page 31
+--- PAGE 32 ---
+Paneer Tikka Pizza Rs 300
+[MR30]
+Cafe & Continental
+HIGH PROTEIN
+Thin-crust pizza with tomato sauce, mozzarella, tandoori-spiced paneer
+tikka, onion and capsicum — an Indo-Italian Gen-Z favourite.
+Serves: 1 (8" (6 slices))
+Approx calories: 820 kcal
+Spice: Medium (level 2/4) - adjustable
+Prep time: ~16 min
+Dietary: vegetarian, contains-dairy, high-protein
+Available: all-day
+REPRESENTATIVE | photo-reality match: 60%
+Stand-in margherita photo; tikka version has
+paneer chunks and a redder look.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Wheat pizza base primary no gluten
+Mozzarella cheese primary no dairy
+Paneer tikka primary no dairy
+Onion & capsicum secondary yes -
+ALLERGENS
+Contains: gluten, dairy
+May contain (cross-contact): soy
+Status: verified by kitchen
+PREPARATION
+oven-baked · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Make it spicier Yes no charge
+Extra paneer Yes +Rs 50
+Savora - dummy menu dataset - know your food before you order Page 32
+--- PAGE 33 ---
+Classic Veg Burger Rs 120
+[MR31]
+Cafe & Continental
+BESTSELLER
+A toasted bun layered with a crisp potato-veg patty, lettuce, tomato, onion
+and creamy mayo. Served with a side of fries portion is separate.
+Serves: 1 (1 burger)
+Approx calories: 560 kcal
+Spice: Mild (level 1/4)
+Prep time: ~10 min
+Dietary: vegetarian, contains-egg, contains-dairy
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 85%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Wheat burger bun primary no gluten, sesame
+Potato-veg patty primary no gluten
+Mayonnaise secondary yes egg
+Lettuce, tomato, onion secondary yes -
+Cheese slice minor yes dairy
+ALLERGENS
+Contains: gluten, sesame, egg, dairy
+May contain (cross-contact): soy
+Status: verified by kitchen
+Bun has sesame; mayo has egg; cheese has dairy.
+PREPARATION
+fried patty, assembled · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Eggless mayo Yes no charge
+No cheese Yes -Rs 15
+Sesame-free bun (Only sesame buns are stocked currently.) No -
+Savora - dummy menu dataset - know your food before you order Page 33
+--- PAGE 34 ---
+Crispy Chicken Burger Rs 180
+[MR32]
+Cafe & Continental
+HIGH PROTEIN
+A juicy crumb-fried chicken fillet with lettuce, onion and spicy mayo in a
+toasted sesame bun.
+Serves: 1 (1 burger)
+Approx calories: 640 kcal
+Spice: Medium (level 2/4) - adjustable
+Prep time: ~12 min
+Dietary: non-vegetarian, contains-egg, high-protein
+Available: all-day
+REPRESENTATIVE | photo-reality match: 65%
+Stand-in veg-burger photo; chicken version has a
+fried fillet inside.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Wheat sesame bun primary no gluten, sesame
+Crumb-fried chicken fillet primary no gluten, egg
+Spicy mayo secondary yes egg
+Lettuce & onion secondary yes -
+ALLERGENS
+Contains: gluten, sesame, egg
+May contain (cross-contact): dairy, soy
+Status: verified by kitchen
+PREPARATION
+deep-fried fillet, assembled · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Grilled fillet (not fried) Yes no charge
+Add cheese Yes +Rs 20
+Savora - dummy menu dataset - know your food before you order Page 34
+--- PAGE 35 ---
+Peri Peri Fries Rs 110
+[MR33]
+Cafe & Continental
+SPICY *** JAIN OK
+Golden potato fries dusted with house peri peri spice mix, served with a
+mayo dip. A Gen-Z snack staple.
+Serves: 1 (180 g)
+NO VERIFIED Approx calories: 420 kcal
+PHOTO Spice: Spicy (level 3/4) - adjustable
+Prep time: ~8 min
+Dietary: vegetarian, can-be-vegan, contains-egg-dip
+Available: all-day
+No verified in-house photo yet.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Potato fries primary no -
+Peri peri seasoning secondary no -
+Mayo dip minor yes egg
+Frying oil secondary no -
+ALLERGENS
+Contains: egg
+May contain (cross-contact): gluten, milk
+Status: verified by kitchen
+Egg from mayo dip only; fryer shared with gluten items.
+PREPARATION
+deep-fried · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Plain salted fries Yes no charge
+No dip (vegan) Yes no charge
+Cheese loaded fries Yes +Rs 50
+Savora - dummy menu dataset - know your food before you order Page 35
+--- PAGE 36 ---
+Penne Alfredo Pasta Rs 220
+[MR34]
+Cafe & Continental
+Penne tossed in a creamy white sauce of butter, milk, cheese and garlic,
+finished with herbs and chilli flakes. Veg.
+Serves: 1 (300 g)
+NO VERIFIED Approx calories: 620 kcal
+PHOTO Spice: Mild (level 1/4) - adjustable
+Prep time: ~14 min
+Dietary: vegetarian, contains-dairy
+Available: all-day
+No verified in-house photo yet.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Penne (wheat pasta) primary no gluten
+White sauce (butter, milk, cheese) primary no dairy
+Garlic & herbs minor yes -
+Vegetables (corn, capsicum) secondary yes -
+ALLERGENS
+Contains: gluten, dairy
+Status: verified by kitchen
+PREPARATION
+boiled, sauce-tossed · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Red (arrabiata) sauce Yes no charge
+Add chicken Yes +Rs 60
+Gluten-free pasta (Not stocked currently.) No -
+BEVERAGES
+Savora - dummy menu dataset - know your food before you order Page 36
+--- PAGE 37 ---
+Masala Chai Rs 30
+[MR35]
+Beverages
+BESTSELLER JAIN OK
+Black tea simmered with milk, sugar, ginger and cardamom. Served hot in
+a cup.
+Serves: 1 (150 ml)
+Approx calories: 120 kcal
+Spice: Not spicy (level 0/4)
+Prep time: ~6 min
+Dietary: vegetarian, contains-dairy, can-be-vegan
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 92%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Black tea primary no -
+Milk primary yes dairy
+Sugar secondary yes -
+Ginger & cardamom minor yes -
+ALLERGENS
+Contains: dairy
+Status: verified by kitchen
+PREPARATION
+simmered · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Less / no sugar Yes no charge
+Oat / soy milk (vegan) Yes +Rs 20
+Extra ginger (adrak) Yes no charge
+Savora - dummy menu dataset - know your food before you order Page 37
+--- PAGE 38 ---
+Cold Coffee Rs 120
+[MR36]
+Beverages
+BESTSELLER
+Instant coffee blended with cold milk, sugar and a scoop of vanilla ice
+cream, topped with chocolate syrup. Thick and frothy.
+Serves: 1 (300 ml)
+NO VERIFIED Approx calories: 320 kcal
+PHOTO Spice: Not spicy (level 0/4)
+Prep time: ~5 min
+Dietary: vegetarian, contains-dairy
+Available: all-day
+No verified in-house photo yet.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Milk primary no dairy
+Coffee secondary no -
+Vanilla ice cream secondary yes dairy
+Sugar & chocolate syrup minor yes -
+ALLERGENS
+Contains: dairy
+May contain (cross-contact): soy
+Status: verified by kitchen
+PREPARATION
+blended · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+No ice cream Yes -Rs 20
+Less sugar Yes no charge
+Add extra coffee shot Yes +Rs 20
+Savora - dummy menu dataset - know your food before you order Page 38
+--- PAGE 39 ---
+Sweet Lassi Rs 70
+[MR37]
+Beverages
+JAIN OK
+Thick whisked yogurt blended with sugar and a hint of cardamom, served
+chilled. Cooling and probiotic.
+Serves: 1 (300 ml)
+NO VERIFIED Approx calories: 260 kcal
+PHOTO Spice: Not spicy (level 0/4)
+Prep time: ~4 min
+Dietary: vegetarian, contains-dairy, probiotic
+Available: all-day
+No verified in-house photo yet.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Yogurt (curd) primary no dairy
+Sugar secondary yes -
+Cardamom garnish yes -
+ALLERGENS
+Contains: dairy
+Status: verified by kitchen
+PREPARATION
+blended · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Salted lassi instead Yes no charge
+Less sugar Yes no charge
+Savora - dummy menu dataset - know your food before you order Page 39
+--- PAGE 40 ---
+Mango Lassi Rs 90
+[MR38]
+Beverages
+BESTSELLER JAIN OK
+Thick yogurt blended with ripe mango pulp and a little sugar, served
+chilled. Seasonal favourite, mildly sweet.
+Serves: 1 (300 ml)
+NO VERIFIED Approx calories: 300 kcal
+PHOTO Spice: Not spicy (level 0/4)
+Prep time: ~4 min
+Dietary: vegetarian, contains-dairy
+Available: all-day (seasonal)
+No verified in-house photo yet.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Yogurt (curd) primary no dairy
+Mango pulp primary no -
+Sugar minor yes -
+ALLERGENS
+Contains: dairy
+Status: verified by kitchen
+PREPARATION
+blended · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Vegan (coconut yogurt) Yes +Rs 30
+No added sugar Yes no charge
+DESSERTS
+Savora - dummy menu dataset - know your food before you order Page 40
+--- PAGE 41 ---
+Malai Kulfi Rs 80
+[MR39]
+Desserts
+JAIN OK
+Traditional kulfi made from reduced milk (rabri) flavoured with cardamom
+and topped with chopped pistachio and almond. Denser than ice cream.
+Serves: 1 (1 stick (100 g))
+Approx calories: 280 kcal
+Spice: Not spicy (level 0/4)
+Prep time: ~3 min
+Dietary: vegetarian, contains-dairy, contains-nuts
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 90%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Reduced milk (rabri) primary no dairy
+Sugar secondary no -
+Pistachio & almond secondary yes tree_nut
+Cardamom garnish yes -
+ALLERGENS
+Contains: dairy, tree_nut
+Status: verified by kitchen
+Nut topping can be left off but milk base remains.
+PREPARATION
+frozen · made to order: no (batch-prepared)
+CUSTOMISATIONS
+Customisation Allowed? Price
+No nut topping (nut-free topping) Yes no charge
+Falooda kulfi Yes +Rs 40
+Savora - dummy menu dataset - know your food before you order Page 41
+--- PAGE 42 ---
+Jalebi Rs 90
+[MR40]
+Desserts
+BESTSELLER JAIN OK
+Fermented flour batter piped into spirals, deep-fried crisp and dunked in
+warm saffron-cardamom sugar syrup. Served hot.
+Serves: 2 (250 g)
+Approx calories: 520 kcal
+Spice: Not spicy (level 0/4)
+Prep time: ~8 min
+Dietary: vegetarian, can-be-vegan
+Available: all-day
+ACTUAL PHOTO | photo-reality match: 92%
+Real serving photo.
+INGREDIENTS & PROMINENCE
+Ingredient Prominence Removable Allergens
+Refined wheat flour batter primary no gluten
+Sugar syrup primary no -
+Saffron & cardamom minor no -
+Frying oil/ghee secondary yes dairy
+ALLERGENS
+Contains: gluten
+May contain (cross-contact): dairy
+Status: verified by kitchen
+May be fried in ghee (dairy) — ask for oil-fried.
+PREPARATION
+deep-fried, syrup-soaked · made to order: yes
+CUSTOMISATIONS
+Customisation Allowed? Price
+Oil-fried (vegan) Yes no charge
+With rabri (jalebi-rabri) Yes +Rs 60
+Savora - dummy menu dataset - know your food before you order Page 42

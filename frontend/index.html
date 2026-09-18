@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savora — know your food before you order</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+<div class="page">
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">[SAVORA]</span>
+      <span class="brand-tagline">know your food before you order</span>
+    </div>
+    <div class="header-right">
+      <button class="button secondary" id="new-chat-btn" title="Clear conversation">NEW CHAT</button>
+      <div class="status-line" id="status-line">connecting…</div>
+    </div>
+  </header>
+
+  <main class="chat-shell">
+    <div class="chat-log" id="chat-log">
+      <div class="msg msg-bot">
+        <div class="msg-label">SAVORA</div>
+        <div class="msg-bubble">Ask me anything about the menu — allergens, spice level, diet restrictions, price, or just <em>"what's good for a first date?"</em> I'll figure it out.<span class="cursor">_</span></div>
+      </div>
+    </div>
+
+    <form class="chat-input-row" id="chat-form">
+      <span class="prompt-caret">&gt;</span>
+      <input type="text" id="chat-input" autocomplete="off" placeholder="e.g. does the pani puri contain peanuts?" />
+      <button type="submit" class="button primary">SEND</button>
+    </form>
+
+    <div class="quick-row">
+      <button class="button secondary chip" data-q="What's good for a first date?">first date</button>
+      <button class="button secondary chip" data-q="Which dishes are eggless?">eggless dishes</button>
+      <button class="button secondary chip" data-q="What's vegan and under ₹150?">vegan &lt; ₹150</button>
+      <button class="button secondary chip" data-q="What are some mild options for kids?">mild for kids</button>
+      <button class="button secondary chip" data-q="Which dishes are high in protein?">high protein</button>
+      <button class="button secondary chip" data-q="What's the spiciest thing on the menu?">spiciest dish</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span id="llm-flag">AI: —</span>
+    <span class="dot">·</span>
+    <span id="dish-count">loading…</span>
+    <span class="dot">·</span>
+    <a href="/dashboard" target="_blank">kitchen dashboard</a>
+  </footer>
+</div>
+<!-- Order confirmation modal -->
+<div class="modal-overlay" id="order-modal" hidden>
+  <div class="modal-box">
+    <div class="modal-header">
+      <span class="modal-title">REVIEW YOUR ORDER</span>
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-items" id="modal-items"></div>
+    <div class="modal-divider"></div>
+    <div class="modal-total-row">
+      <span>Total</span>
+      <span id="modal-total">₹0</span>
+    </div>
+    <div class="modal-fields">
+      <div class="modal-field-row">
+        <label for="modal-name">Your name</label>
+        <input type="text" id="modal-name" autocomplete="name" placeholder="e.g. Karthik" maxlength="80" />
+      </div>
+      <div class="modal-field-row">
+        <label for="modal-table">Table number</label>
+        <input type="text" id="modal-table" autocomplete="off" placeholder="e.g. 7" maxlength="20" />
+      </div>
+      <div class="modal-field-row">
+        <label for="modal-note">Kitchen note <span class="field-optional">(optional)</span></label>
+        <input type="text" id="modal-note" autocomplete="off" placeholder="e.g. extra napkins, less spice" maxlength="500" />
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="button secondary" id="modal-cancel-btn">Cancel</button>
+      <button class="button primary" id="modal-confirm-btn">Confirm &amp; Place Order</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js?v=6"></script>
+</body>
+</html>

@@ -1,0 +1,3168 @@
+{
+  "restaurant": "Savora",
+  "dish_count": 40,
+  "dishes": [
+    {
+      "code": "MR01",
+      "name": "Pani Puri",
+      "price_inr": 60,
+      "category": "Chaat & Street Snacks",
+      "also_known_as": [
+        "Golgappa",
+        "Puchka",
+        "Gol Gappe"
+      ],
+      "badges": [
+        "BESTSELLER",
+        "VEGAN",
+        "JAIN OK",
+        "SPICY ***"
+      ],
+      "description": "Six crisp semolina shells served with spiced mint-coriander water (teekha pani), sweet tamarind-jaggery chutney, mashed potato and boiled chickpeas. Assembled and eaten one bite at a time. Spice and sweetness of the water can be set per guest.",
+      "serves": "1 (6 puris + water)",
+      "approx_calories_kcal": 180,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~5 min",
+      "dietary_tags": [
+        "vegetarian",
+        "vegan",
+        "nut-free",
+        "jain-on-request"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 95,
+      "ingredients": [
+        {
+          "ingredient": "Semolina-wheat puri shells",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Spiced mint-coriander water",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Tamarind-jaggery chutney",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Boiled potato",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Boiled chickpeas",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Black salt & roasted cumin",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten"
+      ],
+      "allergens_may_contain": [
+        "mustard"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "assembled, no-cook (shells pre-fried)",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Less spicy / sweet water",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No potato (Jain)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Extra puris (2)",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        }
+      ]
+    },
+    {
+      "code": "MR02",
+      "name": "Veg Samosa",
+      "price_inr": 40,
+      "category": "Chaat & Street Snacks",
+      "also_known_as": [
+        "Samosa"
+      ],
+      "badges": [
+        "BESTSELLER",
+        "VEGAN"
+      ],
+      "description": "Two hand-folded triangular pastries filled with spiced mashed potato, green peas and whole spices, deep-fried till golden. Served with mint chutney and tamarind chutney.",
+      "serves": "1 (2 pieces)",
+      "approx_calories_kcal": 520,
+      "spice": "Mild-Medium (level 2/4)",
+      "prep_time": "~10 min",
+      "dietary_tags": [
+        "vegetarian",
+        "vegan",
+        "nut-free"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 95,
+      "ingredients": [
+        {
+          "ingredient": "Refined-wheat pastry (maida)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Potato",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Green peas",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Cumin, coriander, garam masala",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Frying oil",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "deep-fried",
+      "made_to_order": false,
+      "made_to_order_note": "batch-prepared",
+      "customisations": [
+        {
+          "customisation": "Air-fried instead of deep-fried",
+          "allowed": false,
+          "price_note": "-"
+        },
+        {
+          "customisation": "Extra chutney",
+          "allowed": true,
+          "price_note": "+Rs 10"
+        }
+      ]
+    },
+    {
+      "code": "MR03",
+      "name": "Samosa Chaat",
+      "price_inr": 80,
+      "category": "Chaat & Street Snacks",
+      "also_known_as": null,
+      "badges": [
+        "SPICY ***"
+      ],
+      "description": "A samosa broken and smothered with warm white-pea ragda, whisked yogurt, tamarind and mint chutney, onions, sev and chaat masala.",
+      "serves": "1 (1 bowl)",
+      "approx_calories_kcal": 420,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~8 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "nut-free"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 55,
+      "ingredients": [
+        {
+          "ingredient": "Samosa",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "White-pea / chickpea ragda",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Whisked yogurt",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Tamarind & mint chutney",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Fine sev (gram-flour noodles)",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Onion",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [
+        "mustard"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "assembled, deep-fried base",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "No yogurt (make vegan)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No onion",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Extra sev",
+          "allowed": true,
+          "price_note": "+Rs 10"
+        }
+      ]
+    },
+    {
+      "code": "MR04",
+      "name": "Pav Bhaji",
+      "price_inr": 140,
+      "category": "Chaat & Street Snacks",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "SPICY ***"
+      ],
+      "description": "A rich mash of potato, tomato, peas and capsicum cooked with pav-bhaji masala and finished with butter, served with two soft pav toasted in butter, chopped onion and lemon.",
+      "serves": "1 (2 pav + bhaji)",
+      "approx_calories_kcal": 650,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "nut-free"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 92,
+      "ingredients": [
+        {
+          "ingredient": "Pav (wheat bread rolls)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten",
+            "soy"
+          ]
+        },
+        {
+          "ingredient": "Potato",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Tomato",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Green peas & capsicum",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Butter",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Pav-bhaji masala",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [
+        "soy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "sauteed, griddle-toasted",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "No butter / less butter",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Extra pav (2)",
+          "allowed": true,
+          "price_note": "+Rs 25"
+        },
+        {
+          "customisation": "Cheese pav bhaji",
+          "allowed": true,
+          "price_note": "+Rs 40"
+        }
+      ]
+    },
+    {
+      "code": "MR05",
+      "name": "Mixed Veg Pakora",
+      "price_inr": 90,
+      "category": "Chaat & Street Snacks",
+      "also_known_as": [
+        "Pakode",
+        "Bhajiya"
+      ],
+      "badges": [
+        "VEGAN"
+      ],
+      "description": "Onion, potato and spinach dipped in spiced besan (gram flour) batter and fried crisp. Served with mint chutney. Naturally gluten-free batter.",
+      "serves": "2 (approx 10 pieces)",
+      "approx_calories_kcal": 480,
+      "spice": "Mild-Medium (level 2/4)",
+      "prep_time": "~12 min",
+      "dietary_tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free-recipe",
+        "nut-free"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 90,
+      "ingredients": [
+        {
+          "ingredient": "Gram flour (besan) batter",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Onion",
+          "prominence": "primary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Potato",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Spinach",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Frying oil",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "none declared"
+      ],
+      "allergens_may_contain": [
+        "gluten"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "deep-fried",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Onion only",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Extra green chutney",
+          "allowed": true,
+          "price_note": "+Rs 10"
+        }
+      ]
+    },
+    {
+      "code": "MR06",
+      "name": "Khaman Dhokla",
+      "price_inr": 70,
+      "category": "Chaat & Street Snacks",
+      "also_known_as": [
+        "Dhokla"
+      ],
+      "badges": [
+        "VEGAN"
+      ],
+      "description": "Light, spongy steamed cakes of fermented gram flour, topped with a tempering of mustard seeds, curry leaves and green chilli, finished with sugar-lemon water and coriander. Steamed, not fried.",
+      "serves": "1 (6 pieces)",
+      "approx_calories_kcal": 250,
+      "spice": "Mild (level 1/4)",
+      "prep_time": "~10 min",
+      "dietary_tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free-recipe",
+        "nut-free",
+        "low-oil"
+      ],
+      "available": "breakfast,all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 93,
+      "ingredients": [
+        {
+          "ingredient": "Gram flour (besan)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Mustard-seed & curry-leaf tempering",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "mustard"
+          ]
+        },
+        {
+          "ingredient": "Green chilli",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Sugar-lemon water",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "mustard"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "steamed",
+      "made_to_order": false,
+      "made_to_order_note": "batch-prepared",
+      "customisations": [
+        {
+          "customisation": "No tempering (mustard-free)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Extra green chutney",
+          "allowed": true,
+          "price_note": "+Rs 10"
+        }
+      ]
+    },
+    {
+      "code": "MR07",
+      "name": "Masala Dosa",
+      "price_inr": 120,
+      "category": "South Indian",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "description": "A large, crisp fermented rice-and-lentil crepe wrapped around a spiced potato filling, served with sambar and coconut & tomato chutneys. Cooked on a griddle.",
+      "serves": "1 (1 large dosa + sides)",
+      "approx_calories_kcal": 410,
+      "spice": "Medium (level 2/4) - adjustable",
+      "prep_time": "~12 min",
+      "dietary_tags": [
+        "vegetarian",
+        "gluten-free-recipe",
+        "can-be-vegan",
+        "contains-coconut"
+      ],
+      "available": "breakfast,all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 95,
+      "ingredients": [
+        {
+          "ingredient": "Fermented rice & urad-lentil batter",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Spiced potato filling",
+          "prominence": "primary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Sambar (lentil-vegetable stew)",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Coconut chutney",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "tree_nut"
+          ]
+        },
+        {
+          "ingredient": "Ghee/oil on griddle",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "tree_nut"
+      ],
+      "allergens_may_contain": [
+        "dairy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "griddle-cooked",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Cook in oil (no ghee) — vegan",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No potato (plain)",
+          "allowed": true,
+          "price_note": "-Rs 20"
+        },
+        {
+          "customisation": "Extra sambar",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        }
+      ]
+    },
+    {
+      "code": "MR08",
+      "name": "Plain Sada Dosa",
+      "price_inr": 90,
+      "category": "South Indian",
+      "also_known_as": null,
+      "badges": [
+        "JAIN OK"
+      ],
+      "description": "The same crisp fermented crepe as the masala dosa but without the potato filling — lighter, served with sambar and chutneys.",
+      "serves": "1 (1 large dosa + sides)",
+      "approx_calories_kcal": 300,
+      "spice": "Mild (level 1/4) - adjustable",
+      "prep_time": "~10 min",
+      "dietary_tags": [
+        "vegetarian",
+        "gluten-free-recipe",
+        "can-be-vegan",
+        "jain-on-request"
+      ],
+      "available": "breakfast,all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 80,
+      "ingredients": [
+        {
+          "ingredient": "Fermented rice & urad-lentil batter",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Sambar",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Coconut chutney",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "tree_nut"
+          ]
+        },
+        {
+          "ingredient": "Ghee/oil on griddle",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "tree_nut"
+      ],
+      "allergens_may_contain": [
+        "dairy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "griddle-cooked",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Cook in oil (no ghee) — vegan",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No coconut chutney (nut-free)",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR09",
+      "name": "Idli Sambar",
+      "price_inr": 80,
+      "category": "South Indian",
+      "also_known_as": null,
+      "badges": [
+        "VEGAN"
+      ],
+      "description": "Three soft steamed cakes of fermented rice and urad lentil, served with sambar and coconut chutney. Light, oil-free and easy to digest.",
+      "serves": "1 (3 idli + sides)",
+      "approx_calories_kcal": 280,
+      "spice": "Mild (level 1/4) - adjustable",
+      "prep_time": "~8 min",
+      "dietary_tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free-recipe",
+        "low-oil",
+        "contains-coconut"
+      ],
+      "available": "breakfast,all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 93,
+      "ingredients": [
+        {
+          "ingredient": "Steamed rice & urad-lentil batter",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Sambar",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Coconut chutney",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "tree_nut"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "tree_nut"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "steamed",
+      "made_to_order": false,
+      "made_to_order_note": "batch-prepared",
+      "customisations": [
+        {
+          "customisation": "No coconut chutney (nut-free)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Extra idli (2)",
+          "allowed": true,
+          "price_note": "+Rs 30"
+        },
+        {
+          "customisation": "Podi + ghee idli",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        }
+      ]
+    },
+    {
+      "code": "MR10",
+      "name": "Dal Makhani",
+      "price_inr": 220,
+      "category": "North Indian Mains",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "HIGH PROTEIN",
+        "JAIN OK"
+      ],
+      "description": "Whole black urad lentils and kidney beans simmered overnight, finished with butter, cream and tomato. Rich and mildly spiced. Best with naan or rice.",
+      "serves": "2 (300 g (bowl))",
+      "approx_calories_kcal": 480,
+      "spice": "Medium (level 2/4) - adjustable",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "high-protein",
+        "nut-free",
+        "jain-on-request"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 94,
+      "ingredients": [
+        {
+          "ingredient": "Whole black urad lentil",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Kidney beans (rajma)",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Tomato",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Butter",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Fresh cream",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Ginger-garlic",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "slow-simmered",
+      "made_to_order": false,
+      "made_to_order_note": "batch-prepared",
+      "customisations": [
+        {
+          "customisation": "Less cream / less butter",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No garlic-onion (Jain)",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR11",
+      "name": "Dal Tadka",
+      "price_inr": 180,
+      "category": "North Indian Mains",
+      "also_known_as": null,
+      "badges": [
+        "HIGH PROTEIN",
+        "JAIN OK"
+      ],
+      "description": "Toor and moong lentils cooked soft and finished with a sizzling tempering of ghee, cumin, garlic, dried chilli and tomato. Lighter than dal makhani.",
+      "serves": "2 (300 g (bowl))",
+      "approx_calories_kcal": 320,
+      "spice": "Medium (level 2/4) - adjustable",
+      "prep_time": "~12 min",
+      "dietary_tags": [
+        "vegetarian",
+        "can-be-vegan",
+        "high-protein",
+        "nut-free",
+        "jain-on-request"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 50,
+      "ingredients": [
+        {
+          "ingredient": "Toor & moong lentils",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Ghee tempering",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Garlic & cumin",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Tomato",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "boiled, tempered",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Oil tempering (vegan)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No garlic (Jain)",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR12",
+      "name": "Kadai Paneer",
+      "price_inr": 260,
+      "category": "North Indian Mains",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "HIGH PROTEIN",
+        "SPICY ***"
+      ],
+      "description": "Cubes of paneer tossed with onion, capsicum and tomato in a freshly ground coriander-pepper kadai masala. Semi-dry and aromatic.",
+      "serves": "2 (300 g (bowl))",
+      "approx_calories_kcal": 520,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "high-protein",
+        "nut-free"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 92,
+      "ingredients": [
+        {
+          "ingredient": "Paneer (cottage cheese)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Capsicum & onion",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Tomato",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Kadai masala (coriander, chilli, pepper)",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Cream",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "sauteed, gravy-simmered",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Less spicy",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Tofu instead of paneer (vegan)",
+          "allowed": true,
+          "price_note": "+Rs 30"
+        },
+        {
+          "customisation": "Extra paneer",
+          "allowed": true,
+          "price_note": "+Rs 60"
+        }
+      ]
+    },
+    {
+      "code": "MR13",
+      "name": "Paneer Butter Masala",
+      "price_inr": 270,
+      "category": "North Indian Mains",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "HIGH PROTEIN",
+        "JAIN OK"
+      ],
+      "description": "Soft paneer in a smooth makhani gravy of tomato, butter, cream and cashew, mildly sweet and rich. The crowd-pleaser, very mild.",
+      "serves": "2 (300 g (bowl))",
+      "approx_calories_kcal": 560,
+      "spice": "Mild (level 1/4) - adjustable",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "contains-nuts",
+        "high-protein"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 55,
+      "ingredients": [
+        {
+          "ingredient": "Paneer",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Tomato",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Butter",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Cream",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Cashew paste",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": [
+            "tree_nut"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "dairy",
+        "tree_nut"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "gravy-simmered",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Make it spicier",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No garlic-onion (Jain)",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR14",
+      "name": "Chole Bhature",
+      "price_inr": 160,
+      "category": "North Indian Mains",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "HIGH PROTEIN",
+        "SPICY ***"
+      ],
+      "description": "A robust, tangy chickpea curry (chole) served with two large, deep-fried leavened breads (bhature), with onion, pickle and green chilli.",
+      "serves": "1 (2 bhature + chole)",
+      "approx_calories_kcal": 780,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "high-protein",
+        "nut-free"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 93,
+      "ingredients": [
+        {
+          "ingredient": "Chickpeas (chole)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Refined wheat flour bhatura",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Yogurt (in bhatura dough)",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Onion-tomato masala",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "deep-fried bread, simmered curry",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Extra bhatura",
+          "allowed": true,
+          "price_note": "+Rs 40"
+        },
+        {
+          "customisation": "Less oil chole",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR15",
+      "name": "Chicken Biryani",
+      "price_inr": 280,
+      "category": "Rice & Biryani",
+      "also_known_as": [
+        "Hyderabadi Chicken Biryani"
+      ],
+      "badges": [
+        "BESTSELLER",
+        "HIGH PROTEIN",
+        "SPICY ***"
+      ],
+      "description": "Long-grain basmati rice dum-cooked in layers with yogurt-marinated chicken, fried onions, mint and saffron. Served with raita and salan.",
+      "serves": "1 (450 g + raita)",
+      "approx_calories_kcal": 720,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~20 min",
+      "dietary_tags": [
+        "non-vegetarian",
+        "contains-dairy",
+        "high-protein"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 95,
+      "ingredients": [
+        {
+          "ingredient": "Basmati rice",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Chicken (bone-in)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Yogurt marinade",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Fried onions",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Whole spices & saffron",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Raita (side)",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "dairy"
+      ],
+      "allergens_may_contain": [
+        "tree_nut"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "dum (sealed slow-cook)",
+      "made_to_order": false,
+      "made_to_order_note": "batch-prepared",
+      "customisations": [
+        {
+          "customisation": "Boneless chicken",
+          "allowed": true,
+          "price_note": "+Rs 40"
+        },
+        {
+          "customisation": "Extra spicy",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No raita",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR16",
+      "name": "Veg Dum Biryani",
+      "price_inr": 230,
+      "category": "Rice & Biryani",
+      "also_known_as": null,
+      "badges": [
+        "SPICY ***"
+      ],
+      "description": "Basmati rice dum-cooked with carrot, beans, paneer and potato in biryani masala with fried onions and mint. Served with raita.",
+      "serves": "1 (450 g + raita)",
+      "approx_calories_kcal": 560,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~20 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "high-fibre"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 65,
+      "ingredients": [
+        {
+          "ingredient": "Basmati rice",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Mixed vegetables",
+          "prominence": "primary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Paneer",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Yogurt",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Fried onions & saffron",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "dairy"
+      ],
+      "allergens_may_contain": [
+        "tree_nut"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "dum (sealed slow-cook)",
+      "made_to_order": false,
+      "made_to_order_note": "batch-prepared",
+      "customisations": [
+        {
+          "customisation": "No paneer",
+          "allowed": true,
+          "price_note": "-Rs 20"
+        },
+        {
+          "customisation": "Extra raita",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        }
+      ]
+    },
+    {
+      "code": "MR17",
+      "name": "Veg Fried Rice",
+      "price_inr": 160,
+      "category": "Rice & Biryani",
+      "also_known_as": null,
+      "badges": [
+        "VEGAN"
+      ],
+      "description": "Day-cooked rice stir-fried on high heat with carrot, beans, cabbage, spring onion, soy and a touch of vinegar. Indo-Chinese style.",
+      "serves": "1 (350 g)",
+      "approx_calories_kcal": 420,
+      "spice": "Medium (level 2/4) - adjustable",
+      "prep_time": "~12 min",
+      "dietary_tags": [
+        "vegetarian",
+        "vegan",
+        "contains-soy"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 90,
+      "ingredients": [
+        {
+          "ingredient": "Rice",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Mixed vegetables",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Soy sauce",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": [
+            "soy",
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Garlic & spring onion",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "soy",
+        "gluten"
+      ],
+      "allergens_may_contain": [
+        "sesame"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "wok stir-fried",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "No garlic",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Schezwan style",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        },
+        {
+          "customisation": "Add paneer",
+          "allowed": true,
+          "price_note": "+Rs 40"
+        }
+      ]
+    },
+    {
+      "code": "MR18",
+      "name": "Schezwan Fried Rice",
+      "price_inr": 180,
+      "category": "Rice & Biryani",
+      "also_known_as": null,
+      "badges": [
+        "VEGAN",
+        "SPICY ****"
+      ],
+      "description": "Veg fried rice fired up with house schezwan sauce — hot, garlicky and tangy. A Gen-Z favourite.",
+      "serves": "1 (350 g)",
+      "approx_calories_kcal": 460,
+      "spice": "Very Spicy (level 4/4) - adjustable",
+      "prep_time": "~12 min",
+      "dietary_tags": [
+        "vegetarian",
+        "vegan",
+        "contains-soy",
+        "very-spicy"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 70,
+      "ingredients": [
+        {
+          "ingredient": "Rice",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Schezwan sauce (red chilli, garlic)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Mixed vegetables",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Soy sauce",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": [
+            "soy",
+            "gluten"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "soy",
+        "gluten"
+      ],
+      "allergens_may_contain": [
+        "sesame"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "wok stir-fried",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Less spicy",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Add paneer / chicken",
+          "allowed": true,
+          "price_note": "+Rs 50"
+        }
+      ]
+    },
+    {
+      "code": "MR19",
+      "name": "Steamed Veg Momos",
+      "price_inr": 110,
+      "category": "Indo-Chinese & Momos",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "VEGAN"
+      ],
+      "description": "Six hand-pleated flour dumplings filled with finely chopped cabbage, carrot and spring onion, steamed and served with fiery red momo chutney.",
+      "serves": "1 (6 pieces)",
+      "approx_calories_kcal": 300,
+      "spice": "Mild (chutney spicy) (level 1/4) - adjustable",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "vegan",
+        "low-oil"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 93,
+      "ingredients": [
+        {
+          "ingredient": "Refined-wheat wrapper",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Cabbage & carrot filling",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Spring onion & garlic",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Red momo chutney (side)",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten"
+      ],
+      "allergens_may_contain": [
+        "soy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "steamed",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Pan-fried instead of steamed",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        },
+        {
+          "customisation": "Extra chutney",
+          "allowed": true,
+          "price_note": "+Rs 10"
+        }
+      ]
+    },
+    {
+      "code": "MR20",
+      "name": "Paneer Momos",
+      "price_inr": 130,
+      "category": "Indo-Chinese & Momos",
+      "also_known_as": null,
+      "badges": [],
+      "description": "Soft steamed dumplings stuffed with grated paneer, onion and pepper, served with red momo chutney.",
+      "serves": "1 (6 pieces)",
+      "approx_calories_kcal": 360,
+      "spice": "Mild (chutney spicy) (level 1/4) - adjustable",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 85,
+      "ingredients": [
+        {
+          "ingredient": "Refined-wheat wrapper",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Paneer filling",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Onion & pepper",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [
+        "soy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "steamed",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Pan-fried",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        },
+        {
+          "customisation": "Tandoori momos",
+          "allowed": true,
+          "price_note": "+Rs 40"
+        }
+      ]
+    },
+    {
+      "code": "MR21",
+      "name": "Veg Manchurian (Dry)",
+      "price_inr": 170,
+      "category": "Indo-Chinese & Momos",
+      "also_known_as": null,
+      "badges": [
+        "VEGAN",
+        "SPICY ***"
+      ],
+      "description": "Deep-fried cabbage-carrot dumplings tossed in a glossy soy-garlic-chilli sauce with onion and capsicum. Served dry as a starter.",
+      "serves": "2 (8 pieces)",
+      "approx_calories_kcal": 430,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "vegan",
+        "contains-soy"
+      ],
+      "available": "all-day",
+      "photo_type": "none",
+      "photo_reality_match_pct": null,
+      "ingredients": [
+        {
+          "ingredient": "Cabbage-carrot balls (with flour)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Soy-garlic-chilli sauce",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "soy",
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Capsicum & onion",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Cornflour & frying oil",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "soy"
+      ],
+      "allergens_may_contain": [
+        "sesame"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "deep-fried, wok-tossed",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Gravy style",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Less spicy",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR22",
+      "name": "Chilli Paneer (Dry)",
+      "price_inr": 210,
+      "category": "Indo-Chinese & Momos",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "SPICY ***"
+      ],
+      "description": "Batter-fried paneer cubes wok-tossed with onion, capsicum, green chilli and a soy-chilli sauce. A Gen-Z starter favourite.",
+      "serves": "2 (250 g)",
+      "approx_calories_kcal": 520,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "contains-soy"
+      ],
+      "available": "all-day",
+      "photo_type": "none",
+      "photo_reality_match_pct": null,
+      "ingredients": [
+        {
+          "ingredient": "Paneer",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Cornflour-maida batter",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Soy-chilli sauce",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "soy",
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Capsicum, onion, green chilli",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "dairy",
+        "gluten",
+        "soy"
+      ],
+      "allergens_may_contain": [
+        "sesame"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "fried, wok-tossed",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Gravy style",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Tofu (vegan)",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        }
+      ]
+    },
+    {
+      "code": "MR23",
+      "name": "Hakka Noodles (Veg)",
+      "price_inr": 160,
+      "category": "Indo-Chinese & Momos",
+      "also_known_as": null,
+      "badges": [],
+      "description": "Boiled wheat noodles wok-tossed with julienned vegetables, soy and pepper. Light, smoky and quick.",
+      "serves": "1 (350 g)",
+      "approx_calories_kcal": 440,
+      "spice": "Medium (level 2/4) - adjustable",
+      "prep_time": "~12 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-soy"
+      ],
+      "available": "all-day",
+      "photo_type": "none",
+      "photo_reality_match_pct": null,
+      "ingredients": [
+        {
+          "ingredient": "Wheat noodles",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Mixed vegetables",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Soy sauce",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": [
+            "soy",
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Garlic & pepper",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "soy"
+      ],
+      "allergens_may_contain": [
+        "sesame",
+        "egg"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "boiled, wok stir-fried",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Schezwan / garlic style",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        },
+        {
+          "customisation": "Add paneer / chicken",
+          "allowed": true,
+          "price_note": "+Rs 50"
+        }
+      ]
+    },
+    {
+      "code": "MR24",
+      "name": "Chicken Kathi Roll",
+      "price_inr": 160,
+      "category": "Rolls & Wraps",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "HIGH PROTEIN",
+        "SPICY ***"
+      ],
+      "description": "Flaky paratha coated with egg, filled with spiced grilled chicken, onions, green chutney and a squeeze of lemon, rolled to order.",
+      "serves": "1 (1 roll)",
+      "approx_calories_kcal": 520,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~12 min",
+      "dietary_tags": [
+        "non-vegetarian",
+        "high-protein"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 90,
+      "ingredients": [
+        {
+          "ingredient": "Wheat paratha",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Egg coating",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "egg"
+          ]
+        },
+        {
+          "ingredient": "Spiced chicken",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Onion & green chutney",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "egg"
+      ],
+      "allergens_may_contain": [
+        "dairy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "griddle-cooked, assembled",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "No egg coating",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Extra spicy",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Double chicken",
+          "allowed": true,
+          "price_note": "+Rs 60"
+        }
+      ]
+    },
+    {
+      "code": "MR25",
+      "name": "Paneer Kathi Roll",
+      "price_inr": 150,
+      "category": "Rolls & Wraps",
+      "also_known_as": null,
+      "badges": [
+        "HIGH PROTEIN"
+      ],
+      "description": "Paratha filled with marinated paneer tikka, onions, capsicum and mint chutney, rolled to order. Vegetarian version of the kathi roll.",
+      "serves": "1 (1 roll)",
+      "approx_calories_kcal": 480,
+      "spice": "Medium (level 2/4) - adjustable",
+      "prep_time": "~12 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "high-protein"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 85,
+      "ingredients": [
+        {
+          "ingredient": "Wheat paratha",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Paneer tikka",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Yogurt marinade",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Onion, capsicum, mint chutney",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "griddle-cooked, assembled",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "No onion",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Add cheese",
+          "allowed": true,
+          "price_note": "+Rs 30"
+        }
+      ]
+    },
+    {
+      "code": "MR26",
+      "name": "Butter Naan",
+      "price_inr": 45,
+      "category": "Breads",
+      "also_known_as": null,
+      "badges": [
+        "JAIN OK"
+      ],
+      "description": "A pillowy refined-flour flatbread baked in the tandoor and brushed with butter. Pairs with any gravy.",
+      "serves": "1 (1 piece)",
+      "approx_calories_kcal": 300,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~8 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 90,
+      "ingredients": [
+        {
+          "ingredient": "Refined wheat flour (maida)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Yogurt/milk in dough",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Butter brush",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "tandoor-baked",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "No butter (dry naan)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Add garlic",
+          "allowed": true,
+          "price_note": "+Rs 15"
+        }
+      ]
+    },
+    {
+      "code": "MR27",
+      "name": "Garlic Naan",
+      "price_inr": 60,
+      "category": "Breads",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "description": "Soft naan studded with chopped garlic and coriander, brushed with butter. Fragrant and a Gen-Z pairing favourite.",
+      "serves": "1 (1 piece)",
+      "approx_calories_kcal": 320,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~8 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 80,
+      "ingredients": [
+        {
+          "ingredient": "Refined wheat flour (maida)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Garlic",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Butter",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "tandoor-baked",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Extra garlic",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Cheese garlic naan",
+          "allowed": true,
+          "price_note": "+Rs 40"
+        }
+      ]
+    },
+    {
+      "code": "MR28",
+      "name": "Tandoori Roti",
+      "price_inr": 30,
+      "category": "Breads",
+      "also_known_as": null,
+      "badges": [
+        "JAIN OK"
+      ],
+      "description": "A rustic whole-wheat flatbread baked crisp on the tandoor walls. Lower in fat than naan and dairy-free if served plain.",
+      "serves": "1 (1 piece)",
+      "approx_calories_kcal": 160,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~6 min",
+      "dietary_tags": [
+        "vegetarian",
+        "can-be-vegan",
+        "whole-grain"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 85,
+      "ingredients": [
+        {
+          "ingredient": "Whole wheat flour (atta)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Butter (optional brush)",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "gluten"
+      ],
+      "allergens_may_contain": [
+        "dairy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "tandoor-baked",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Plain (no butter) — vegan",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Butter roti",
+          "allowed": true,
+          "price_note": "+Rs 10"
+        }
+      ]
+    },
+    {
+      "code": "MR29",
+      "name": "Margherita Pizza",
+      "price_inr": 240,
+      "category": "Cafe & Continental",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "description": "Hand-stretched thin crust topped with tomato sauce, mozzarella and fresh basil, baked in a deck oven. 8 inch.",
+      "serves": "1 (8\" (6 slices))",
+      "approx_calories_kcal": 720,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~15 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 88,
+      "ingredients": [
+        {
+          "ingredient": "Wheat pizza base",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Mozzarella cheese",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Tomato sauce",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Basil",
+          "prominence": "garnish",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [
+        "soy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "oven-baked",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Vegan cheese",
+          "allowed": true,
+          "price_note": "+Rs 60"
+        },
+        {
+          "customisation": "Whole-wheat base",
+          "allowed": true,
+          "price_note": "+Rs 30"
+        },
+        {
+          "customisation": "Extra cheese",
+          "allowed": true,
+          "price_note": "+Rs 50"
+        }
+      ]
+    },
+    {
+      "code": "MR30",
+      "name": "Paneer Tikka Pizza",
+      "price_inr": 300,
+      "category": "Cafe & Continental",
+      "also_known_as": null,
+      "badges": [
+        "HIGH PROTEIN"
+      ],
+      "description": "Thin-crust pizza with tomato sauce, mozzarella, tandoori-spiced paneer tikka, onion and capsicum — an Indo-Italian Gen-Z favourite.",
+      "serves": "1 (8\" (6 slices))",
+      "approx_calories_kcal": 820,
+      "spice": "Medium (level 2/4) - adjustable",
+      "prep_time": "~16 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "high-protein"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 60,
+      "ingredients": [
+        {
+          "ingredient": "Wheat pizza base",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Mozzarella cheese",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Paneer tikka",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Onion & capsicum",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [
+        "soy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "oven-baked",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Make it spicier",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Extra paneer",
+          "allowed": true,
+          "price_note": "+Rs 50"
+        }
+      ]
+    },
+    {
+      "code": "MR31",
+      "name": "Classic Veg Burger",
+      "price_inr": 120,
+      "category": "Cafe & Continental",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "description": "A toasted bun layered with a crisp potato-veg patty, lettuce, tomato, onion and creamy mayo. Served with a side of fries portion is separate.",
+      "serves": "1 (1 burger)",
+      "approx_calories_kcal": 560,
+      "spice": "Mild (level 1/4)",
+      "prep_time": "~10 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-egg",
+        "contains-dairy"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 85,
+      "ingredients": [
+        {
+          "ingredient": "Wheat burger bun",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten",
+            "sesame"
+          ]
+        },
+        {
+          "ingredient": "Potato-veg patty",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Mayonnaise",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "egg"
+          ]
+        },
+        {
+          "ingredient": "Lettuce, tomato, onion",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Cheese slice",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "sesame",
+        "egg",
+        "dairy"
+      ],
+      "allergens_may_contain": [
+        "soy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "fried patty, assembled",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Eggless mayo",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No cheese",
+          "allowed": true,
+          "price_note": "-Rs 15"
+        },
+        {
+          "customisation": "Sesame-free bun (Only sesame buns are stocked currently.)",
+          "allowed": false,
+          "price_note": "-"
+        }
+      ]
+    },
+    {
+      "code": "MR32",
+      "name": "Crispy Chicken Burger",
+      "price_inr": 180,
+      "category": "Cafe & Continental",
+      "also_known_as": null,
+      "badges": [
+        "HIGH PROTEIN"
+      ],
+      "description": "A juicy crumb-fried chicken fillet with lettuce, onion and spicy mayo in a toasted sesame bun.",
+      "serves": "1 (1 burger)",
+      "approx_calories_kcal": 640,
+      "spice": "Medium (level 2/4) - adjustable",
+      "prep_time": "~12 min",
+      "dietary_tags": [
+        "non-vegetarian",
+        "contains-egg",
+        "high-protein"
+      ],
+      "available": "all-day",
+      "photo_type": "representative",
+      "photo_reality_match_pct": 65,
+      "ingredients": [
+        {
+          "ingredient": "Wheat sesame bun",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten",
+            "sesame"
+          ]
+        },
+        {
+          "ingredient": "Crumb-fried chicken fillet",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten",
+            "egg"
+          ]
+        },
+        {
+          "ingredient": "Spicy mayo",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "egg"
+          ]
+        },
+        {
+          "ingredient": "Lettuce & onion",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "sesame",
+        "egg"
+      ],
+      "allergens_may_contain": [
+        "dairy",
+        "soy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "deep-fried fillet, assembled",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Grilled fillet (not fried)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Add cheese",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        }
+      ]
+    },
+    {
+      "code": "MR33",
+      "name": "Peri Peri Fries",
+      "price_inr": 110,
+      "category": "Cafe & Continental",
+      "also_known_as": null,
+      "badges": [
+        "JAIN OK",
+        "SPICY ***"
+      ],
+      "description": "Golden potato fries dusted with house peri peri spice mix, served with a mayo dip. A Gen-Z snack staple.",
+      "serves": "1 (180 g)",
+      "approx_calories_kcal": 420,
+      "spice": "Spicy (level 3/4) - adjustable",
+      "prep_time": "~8 min",
+      "dietary_tags": [
+        "vegetarian",
+        "can-be-vegan",
+        "contains-egg-dip"
+      ],
+      "available": "all-day",
+      "photo_type": "none",
+      "photo_reality_match_pct": null,
+      "ingredients": [
+        {
+          "ingredient": "Potato fries",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Peri peri seasoning",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Mayo dip",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": [
+            "egg"
+          ]
+        },
+        {
+          "ingredient": "Frying oil",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "egg"
+      ],
+      "allergens_may_contain": [
+        "gluten",
+        "milk"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "deep-fried",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Plain salted fries",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "No dip (vegan)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Cheese loaded fries",
+          "allowed": true,
+          "price_note": "+Rs 50"
+        }
+      ]
+    },
+    {
+      "code": "MR34",
+      "name": "Penne Alfredo Pasta",
+      "price_inr": 220,
+      "category": "Cafe & Continental",
+      "also_known_as": null,
+      "badges": [],
+      "description": "Penne tossed in a creamy white sauce of butter, milk, cheese and garlic, finished with herbs and chilli flakes. Veg.",
+      "serves": "1 (300 g)",
+      "approx_calories_kcal": 620,
+      "spice": "Mild (level 1/4) - adjustable",
+      "prep_time": "~14 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy"
+      ],
+      "available": "all-day",
+      "photo_type": "none",
+      "photo_reality_match_pct": null,
+      "ingredients": [
+        {
+          "ingredient": "Penne (wheat pasta)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "White sauce (butter, milk, cheese)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Garlic & herbs",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Vegetables (corn, capsicum)",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "gluten",
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "boiled, sauce-tossed",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Red (arrabiata) sauce",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Add chicken",
+          "allowed": true,
+          "price_note": "+Rs 60"
+        },
+        {
+          "customisation": "Gluten-free pasta (Not stocked currently.)",
+          "allowed": false,
+          "price_note": "-"
+        }
+      ]
+    },
+    {
+      "code": "MR35",
+      "name": "Masala Chai",
+      "price_inr": 30,
+      "category": "Beverages",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "JAIN OK"
+      ],
+      "description": "Black tea simmered with milk, sugar, ginger and cardamom. Served hot in a cup.",
+      "serves": "1 (150 ml)",
+      "approx_calories_kcal": 120,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~6 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "can-be-vegan"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 92,
+      "ingredients": [
+        {
+          "ingredient": "Black tea",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Milk",
+          "prominence": "primary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Sugar",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Ginger & cardamom",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "simmered",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Less / no sugar",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Oat / soy milk (vegan)",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        },
+        {
+          "customisation": "Extra ginger (adrak)",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR36",
+      "name": "Cold Coffee",
+      "price_inr": 120,
+      "category": "Beverages",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "description": "Instant coffee blended with cold milk, sugar and a scoop of vanilla ice cream, topped with chocolate syrup. Thick and frothy.",
+      "serves": "1 (300 ml)",
+      "approx_calories_kcal": 320,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~5 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy"
+      ],
+      "available": "all-day",
+      "photo_type": "none",
+      "photo_reality_match_pct": null,
+      "ingredients": [
+        {
+          "ingredient": "Milk",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Coffee",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Vanilla ice cream",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Sugar & chocolate syrup",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "dairy"
+      ],
+      "allergens_may_contain": [
+        "soy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "blended",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "No ice cream",
+          "allowed": true,
+          "price_note": "-Rs 20"
+        },
+        {
+          "customisation": "Less sugar",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Add extra coffee shot",
+          "allowed": true,
+          "price_note": "+Rs 20"
+        }
+      ]
+    },
+    {
+      "code": "MR37",
+      "name": "Sweet Lassi",
+      "price_inr": 70,
+      "category": "Beverages",
+      "also_known_as": null,
+      "badges": [
+        "JAIN OK"
+      ],
+      "description": "Thick whisked yogurt blended with sugar and a hint of cardamom, served chilled. Cooling and probiotic.",
+      "serves": "1 (300 ml)",
+      "approx_calories_kcal": 260,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~4 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "probiotic"
+      ],
+      "available": "all-day",
+      "photo_type": "none",
+      "photo_reality_match_pct": null,
+      "ingredients": [
+        {
+          "ingredient": "Yogurt (curd)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Sugar",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": []
+        },
+        {
+          "ingredient": "Cardamom",
+          "prominence": "garnish",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "blended",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Salted lassi instead",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Less sugar",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR38",
+      "name": "Mango Lassi",
+      "price_inr": 90,
+      "category": "Beverages",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "JAIN OK"
+      ],
+      "description": "Thick yogurt blended with ripe mango pulp and a little sugar, served chilled. Seasonal favourite, mildly sweet.",
+      "serves": "1 (300 ml)",
+      "approx_calories_kcal": 300,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~4 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy"
+      ],
+      "available": "all-day (seasonal)",
+      "photo_type": "none",
+      "photo_reality_match_pct": null,
+      "ingredients": [
+        {
+          "ingredient": "Yogurt (curd)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Mango pulp",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Sugar",
+          "prominence": "minor",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "dairy"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "blended",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Vegan (coconut yogurt)",
+          "allowed": true,
+          "price_note": "+Rs 30"
+        },
+        {
+          "customisation": "No added sugar",
+          "allowed": true,
+          "price_note": "no charge"
+        }
+      ]
+    },
+    {
+      "code": "MR39",
+      "name": "Malai Kulfi",
+      "price_inr": 80,
+      "category": "Desserts",
+      "also_known_as": null,
+      "badges": [
+        "JAIN OK"
+      ],
+      "description": "Traditional kulfi made from reduced milk (rabri) flavoured with cardamom and topped with chopped pistachio and almond. Denser than ice cream.",
+      "serves": "1 (1 stick (100 g))",
+      "approx_calories_kcal": 280,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~3 min",
+      "dietary_tags": [
+        "vegetarian",
+        "contains-dairy",
+        "contains-nuts"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 90,
+      "ingredients": [
+        {
+          "ingredient": "Reduced milk (rabri)",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "ingredient": "Sugar",
+          "prominence": "secondary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Pistachio & almond",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "tree_nut"
+          ]
+        },
+        {
+          "ingredient": "Cardamom",
+          "prominence": "garnish",
+          "removable": true,
+          "allergens": []
+        }
+      ],
+      "allergens_contains": [
+        "dairy",
+        "tree_nut"
+      ],
+      "allergens_may_contain": [],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "frozen",
+      "made_to_order": false,
+      "made_to_order_note": "batch-prepared",
+      "customisations": [
+        {
+          "customisation": "No nut topping (nut-free topping)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "Falooda kulfi",
+          "allowed": true,
+          "price_note": "+Rs 40"
+        }
+      ]
+    },
+    {
+      "code": "MR40",
+      "name": "Jalebi",
+      "price_inr": 90,
+      "category": "Desserts",
+      "also_known_as": null,
+      "badges": [
+        "BESTSELLER",
+        "JAIN OK"
+      ],
+      "description": "Fermented flour batter piped into spirals, deep-fried crisp and dunked in warm saffron-cardamom sugar syrup. Served hot.",
+      "serves": "2 (250 g)",
+      "approx_calories_kcal": 520,
+      "spice": "Not spicy (level 0/4)",
+      "prep_time": "~8 min",
+      "dietary_tags": [
+        "vegetarian",
+        "can-be-vegan"
+      ],
+      "available": "all-day",
+      "photo_type": "actual_dish_photo",
+      "photo_reality_match_pct": 92,
+      "ingredients": [
+        {
+          "ingredient": "Refined wheat flour batter",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "ingredient": "Sugar syrup",
+          "prominence": "primary",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Saffron & cardamom",
+          "prominence": "minor",
+          "removable": false,
+          "allergens": []
+        },
+        {
+          "ingredient": "Frying oil/ghee",
+          "prominence": "secondary",
+          "removable": true,
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "allergens_contains": [
+        "gluten"
+      ],
+      "allergens_may_contain": [
+        "dairy"
+      ],
+      "allergens_verified_by_kitchen": true,
+      "preparation_method": "deep-fried, syrup-soaked",
+      "made_to_order": true,
+      "made_to_order_note": "",
+      "customisations": [
+        {
+          "customisation": "Oil-fried (vegan)",
+          "allowed": true,
+          "price_note": "no charge"
+        },
+        {
+          "customisation": "With rabri (jalebi-rabri)",
+          "allowed": true,
+          "price_note": "+Rs 60"
+        }
+      ]
+    }
+  ]
+}

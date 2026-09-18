@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savora — Track Your Order</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --offblack:     #0e0c0c;
+  --offwhite:     #e3e1df;
+  --magenta:      #e53aa3;
+  --yellow:       #ffd84d;
+  --orange:       #ff8a1f;
+  --maroon:       #921231;
+  --green:        #4eea3a;
+  --teal:         #4dd0e1;
+  --gray:         #555;
+  --gray-light:   #999;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--offblack);
+  color: var(--offwhite);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: var(--offwhite); }
+a:hover { color: var(--magenta); }
+
+.page {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+}
+
+.brand { font-weight: 700; font-size: 17px; letter-spacing: 1px; color: var(--magenta); }
+.back  { font-size: 12px; color: var(--gray-light); text-decoration: none; }
+.back:hover { color: var(--offwhite); }
+
+/* ── status timeline ───────────────────────────────────────────────────────── */
+
+.timeline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 0;
+}
+
+.tl-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 6px;
+  position: relative;
+}
+
+.tl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+  background: var(--offblack);
+  position: relative;
+  z-index: 1;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.tl-step.done   .tl-dot { background: var(--green);  border-color: var(--green); }
+.tl-step.active .tl-dot { background: var(--orange); border-color: var(--orange); box-shadow: 0 0 0 3px color-mix(in srgb, var(--orange) 25%, transparent); }
+
+.tl-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray-light);
+  text-align: center;
+}
+
+.tl-step.done   .tl-label { color: var(--green); }
+.tl-step.active .tl-label { color: var(--orange); }
+
+.tl-line {
+  flex: 1;
+  height: 2px;
+  background: var(--gray);
+  margin-bottom: 18px; /* align with dots */
+  transition: background 0.3s;
+}
+
+.tl-line.done { background: var(--green); }
+
+/* ── status badge ──────────────────────────────────────────────────────────── */
+
+.status-badge {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 14px;
+  border: 1px solid var(--gray);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.sb-pending   { border-color: var(--yellow);  color: var(--yellow); }
+.sb-confirmed { border-color: var(--teal);    color: var(--teal); }
+.sb-preparing { border-color: var(--orange);  color: var(--orange); }
+.sb-ready     { border-color: var(--green);   color: var(--green); }
+.sb-completed { border-color: var(--green);   color: var(--green); }
+.sb-cancelled { border-color: var(--maroon);  color: var(--maroon); }
+
+.status-desc {
+  font-size: 12px;
+  color: var(--gray-light);
+  margin-bottom: 24px;
+}
+
+/* ── order details ─────────────────────────────────────────────────────────── */
+
+.section-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gray-light);
+  margin-bottom: 8px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 4px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--gray) 30%, transparent);
+}
+.detail-row:last-child { border-bottom: none; }
+.detail-row span:first-child { color: var(--gray-light); }
+
+.items-list {
+  border: 1px solid color-mix(in srgb, var(--gray) 40%, transparent);
+  margin-bottom: 20px;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  font-size: 13px;
+  border-bottom: 1px solid color-mix(in srgb, var(--gray) 25%, transparent);
+}
+.item-row:last-child { border-bottom: none; }
+.item-qty  { color: var(--gray-light); margin-right: 8px; }
+.item-price { color: var(--yellow); font-weight: 700; }
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 0;
+  border-top: 1px solid var(--gray);
+  margin-bottom: 24px;
+}
+.total-row span:last-child { color: var(--yellow); }
+
+/* ── note ──────────────────────────────────────────────────────────────────── */
+
+.note-box {
+  border-left: 2px solid var(--orange);
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--gray-light);
+  margin-bottom: 24px;
+}
+
+/* ── loading / error ───────────────────────────────────────────────────────── */
+
+.center-msg {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--gray-light);
+}
+
+.error-msg { color: var(--maroon); }
+
+/* ── completed / cancelled banners ────────────────────────────────────────── */
+
+.final-banner {
+  text-align: center;
+  padding: 14px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.banner-completed { border: 1px solid var(--green);  color: var(--green); }
+.banner-cancelled { border: 1px solid var(--maroon); color: var(--maroon); }
+
+/* ── rating ────────────────────────────────────────────────────────────────── */
+
+.rate-box {
+  border: 1px solid var(--magenta);
+  padding: 16px 14px 12px;
+  margin-bottom: 24px;
+}
+
+.rate-title { font-size: 13px; font-weight: 700; color: var(--magenta); margin-bottom: 2px; }
+.rate-sub   { font-size: 11px; color: var(--gray-light); margin-bottom: 12px; }
+
+.rate-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+  border-top: 1px solid color-mix(in srgb, var(--gray) 30%, transparent);
+  font-size: 13px;
+}
+
+.rate-actions { display: flex; gap: 8px; }
+
+.rate-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  background: transparent;
+  color: var(--offwhite);
+  border: 1px solid var(--gray);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.rate-btn:hover:not(:disabled)      { border-color: var(--offwhite); }
+.rate-btn:focus-visible             { outline: 2px solid var(--magenta); outline-offset: 2px; }
+.rate-btn:disabled                  { opacity: 0.5; cursor: default; }
+
+.rate-done      { font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; }
+.rate-done.yes  { color: var(--green); }
+.rate-done.no   { color: var(--orange); }
+.rate-error     { font-size: 11px; color: var(--maroon); margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="header">
+    <span class="brand">[SAVORA]</span>
+    <a href="/" class="back">← back to menu</a>
+  </header>
+
+  <div id="content"><div class="center-msg">Loading order…</div></div>
+
+</div>
+<script>
+"use strict";
+
+const orderId = new URLSearchParams(location.search).get("order_id");
+
+const STEPS = ["pending", "confirmed", "preparing", "ready", "completed"];
+
+const STEP_LABELS = {
+  pending:   "Received",
+  confirmed: "Confirmed",
+  preparing: "Preparing",
+  ready:     "Ready",
+  completed: "Done",
+};
+
+const STATUS_DESC = {
+  pending:   "Order received — waiting for kitchen to confirm.",
+  confirmed: "Kitchen confirmed your order.",
+  preparing: "Your food is being prepared.",
+  ready:     "Your order is ready! Head to the counter.",
+  completed: "Order delivered. Enjoy your meal!",
+  cancelled: "This order was cancelled.",
+};
+
+function esc(s) {
+  return String(s ?? "")
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function renderTimeline(status) {
+  if (status === "cancelled") {
+    return `<div class="status-badge sb-cancelled">CANCELLED</div>
+            <p class="status-desc">${STATUS_DESC.cancelled}</p>`;
+  }
+
+  const currentIdx = STEPS.indexOf(status);
+  const steps = STEPS.map((s, i) => {
+    const cls = i < currentIdx ? "done" : i === currentIdx ? "active" : "";
+    return `<div class="tl-step ${cls}">
+              <div class="tl-dot"></div>
+              <div class="tl-label">${STEP_LABELS[s]}</div>
+            </div>`;
+  });
+
+  const lines = STEPS.slice(0, -1).map((_, i) => {
+    const done = i < currentIdx;
+    return `<div class="tl-line ${done ? "done" : ""}"></div>`;
+  });
+
+  // Interleave steps and lines
+  const nodes = [];
+  steps.forEach((step, i) => {
+    nodes.push(step);
+    if (lines[i]) nodes.push(lines[i]);
+  });
+
+  return `
+    <div class="timeline">${nodes.join("")}</div>
+    <div class="status-badge sb-${status}">${status.toUpperCase()}</div>
+    <p class="status-desc">${esc(STATUS_DESC[status] || status)}</p>`;
+}
+
+function renderOrder(order) {
+  const itemsHtml = (order.items || []).map(item => `
+    <div class="item-row">
+      <span><span class="item-qty">×${item.quantity}</span>${esc(item.dish_name)}</span>
+      <span class="item-price">₹${item.subtotal}</span>
+    </div>`).join("");
+
+  const metaRows = [
+    order.customer_name ? ["Name",  esc(order.customer_name)] : null,
+    order.table_number  ? ["Table", `Table ${esc(order.table_number)}`] : null,
+    ["Order ID", `#${esc(order.id.slice(0, 8))}…`],
+  ].filter(Boolean);
+
+  const noteHtml = order.customer_note
+    ? `<div class="note-box">Kitchen note: ${esc(order.customer_note)}</div>` : "";
+
+  const finalBanner = order.status === "completed"
+    ? `<div class="final-banner banner-completed">Order complete — thank you!</div>`
+    : order.status === "cancelled"
+    ? `<div class="final-banner banner-cancelled">This order has been cancelled</div>`
+    : "";
+
+  return `
+    ${renderTimeline(order.status)}
+
+    <div class="section-title">Order details</div>
+    <div class="items-list">${itemsHtml}</div>
+
+    <div class="total-row">
+      <span>Total</span>
+      <span>₹${order.total_amount}</span>
+    </div>
+
+    ${metaRows.map(([l, v]) => `
+      <div class="detail-row"><span>${l}</span><span>${v}</span></div>`).join("")}
+
+    ${noteHtml}
+    ${renderRating(order)}
+    ${finalBanner}`;
+}
+
+// ── rating ────────────────────────────────────────────────────────────────────
+// Once food is ready, the customer says whether they liked each dish.
+// These answers power the "% of people who liked it" numbers.
+
+const RATEABLE = new Set(["ready", "completed"]);
+
+function renderRating(order) {
+  if (!RATEABLE.has(order.status) || !(order.items || []).length) return "";
+  const ratings  = order.ratings || {};
+  const allDone  = order.items.every(i => i.dish_name in ratings);
+
+  const rows = order.items.map(item => {
+    const name = item.dish_name;
+    const right = name in ratings
+      ? `<span class="rate-done ${ratings[name] ? "yes" : "no"}">${ratings[name] ? "You liked it" : "Not for you"}</span>`
+      : `<span class="rate-actions">
+           <button class="rate-btn" data-dish="${esc(name)}" data-liked="true">Liked it</button>
+           <button class="rate-btn" data-dish="${esc(name)}" data-liked="false">Didn't like it</button>
+         </span>`;
+    return `<div class="rate-row"><span>${esc(name)}</span>${right}</div>`;
+  }).join("");
+
+  return `
+    <div class="rate-box">
+      <div class="rate-title">${allDone ? "Thanks for rating" : "How was your food?"}</div>
+      <div class="rate-sub">${allDone
+        ? "Your answers help other people choose."
+        : "One tap per dish. It helps the next person decide."}</div>
+      ${rows}
+      <div class="rate-error" id="rate-error" hidden></div>
+    </div>`;
+}
+
+async function sendRating(order, dishName, liked, btn) {
+  const errEl = document.getElementById("rate-error");
+  btn.closest(".rate-actions").querySelectorAll("button").forEach(b => b.disabled = true);
+  try {
+    const res  = await fetch(`/api/order/${encodeURIComponent(order.id)}/rate`, {
+      method:  "POST",
+      headers: { "Content-Type": "application/json" },
+      body:    JSON.stringify({ ratings: [{ dish_name: dishName, liked }] }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Could not save your rating.");
+    order.ratings = data.ratings;
+    paint(order);
+  } catch (e) {
+    btn.closest(".rate-actions").querySelectorAll("button").forEach(b => b.disabled = false);
+    if (errEl) { errEl.textContent = `${e.message} Try again.`; errEl.hidden = false; }
+  }
+}
+
+function paint(order) {
+  const content = document.getElementById("content");
+  content.innerHTML = renderOrder(order);
+  content.querySelectorAll(".rate-btn").forEach(btn => {
+    btn.addEventListener("click", () =>
+      sendRating(order, btn.dataset.dish, btn.dataset.liked === "true", btn));
+  });
+}
+
+async function loadOrder() {
+  if (!orderId) {
+    document.getElementById("content").innerHTML =
+      `<div class="center-msg error-msg">No order ID in URL.</div>`;
+    return;
+  }
+
+  try {
+    const res  = await fetch(`/api/order/${encodeURIComponent(orderId)}`);
+    const data = await res.json();
+    if (!res.ok) {
+      document.getElementById("content").innerHTML =
+        `<div class="center-msg error-msg">${esc(data.error || "Order not found")}</div>`;
+      return;
+    }
+
+    document.title = `Savora — Order #${data.id.slice(0, 8)}`;
+    paint(data);
+
+    // Connect SSE for live status updates unless order is final
+    if (!["completed", "cancelled"].includes(data.status)) {
+      subscribeSSE(data);
+    }
+  } catch {
+    document.getElementById("content").innerHTML =
+      `<div class="center-msg error-msg">Could not load order — check your connection.</div>`;
+  }
+}
+
+function subscribeSSE(initialOrder) {
+  const order  = Object.assign({}, initialOrder);
+  const sse    = new EventSource(`/api/order/${encodeURIComponent(orderId)}/stream`);
+
+  sse.onmessage = (e) => {
+    try {
+      const data = JSON.parse(e.data);
+      if (data.error) { sse.close(); return; }
+      if (data.status && data.status !== order.status) {
+        order.status = data.status;
+        paint(order);
+      }
+      if (["completed", "cancelled"].includes(data.status)) sse.close();
+    } catch { /* skip */ }
+  };
+
+  sse.onerror = () => { /* auto-reconnects */ };
+}
+
+loadOrder();
+</script>
+</body>
+</html>

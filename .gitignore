@@ -1,0 +1,24 @@
+# Secrets — never commit. .env holds your OpenRouter API key, database password
+# and dashboard secret. If you have already pushed it once, change those values.
+.env
+
+# Databases and generated data
+*.db
+logs/*.jsonl
+# Results from real people contain what they typed; keep them private.
+# (results_demo.md is practice data and is fine to share.)
+analysis/results_live.md
+
+# Menu PDF: contains 32 dish photos of unconfirmed origin, and the app doesn't
+# need it (it reads savora_menu_dataset.json). Remove this line only if the
+# photos are yours or free to reuse.
+Savora_Menu_Catalog.pdf
+
+# Personal Claude Code permissions (launch.json is shared on purpose)
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

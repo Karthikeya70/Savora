@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savora — Insights</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Same palette and type as the kitchen board, so both owner pages feel like one product. */
+:root {
+  --offblack:     #0e0c0c;
+  --panel:        #161313;
+  --offwhite:     #e3e1df;
+  --magenta:      #e53aa3;
+  --yellow:       #ffd84d;
+  --orange:       #ff8a1f;
+  --maroon:       #c2254d;
+  --green:        #4eea3a;
+  --teal:         #4dd0e1;
+  --gray:         #4a4545;
+  --gray-mid:     #6f6969;
+  --gray-light:   #a09a97;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--offblack);
+  color: var(--offwhite);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+a { color: var(--offwhite); }
+a:hover { color: var(--magenta); }
+button { font-family: var(--font-mono); }
+:focus-visible { outline: 2px solid var(--magenta); outline-offset: 2px; }
+
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-inline: 24px;
+  padding-block: 20px 56px;
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 14px;
+}
+
+.brand { font-size: 17px; font-weight: 700; letter-spacing: 1px; }
+.brand .b1 { color: var(--magenta); }
+.brand .b2 { color: var(--teal); }
+
+.head-right { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font-size: 12px; }
+
+.toggle { display: flex; border: 1px solid var(--gray-mid); }
+.toggle button {
+  background: transparent;
+  color: var(--gray-light);
+  border: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+.toggle button[aria-pressed="true"]            { background: var(--offwhite); color: var(--offblack); }
+.toggle button[data-source="demo"][aria-pressed="true"] { background: var(--yellow); }
+
+.nav-link {
+  font-size: 11px;
+  color: var(--gray-light);
+  text-decoration: none;
+  border: 1px solid var(--gray);
+  padding: 4px 10px;
+  letter-spacing: 0.5px;
+}
+.nav-link:hover { color: var(--offwhite); border-color: var(--offwhite); }
+
+#updated { color: var(--gray-mid); font-size: 11px; }
+
+/* ── banners ───────────────────────────────────────────────────────────────── */
+
+.banner {
+  margin-top: 18px;
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  padding: 10px 14px;
+  font-size: 12px;
+}
+.banner b { letter-spacing: 1px; }
+.banner.error { border-color: var(--maroon); color: var(--maroon); }
+
+/* ── sections ──────────────────────────────────────────────────────────────── */
+
+.section { margin-top: 36px; }
+
+.sec-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--offwhite);
+  margin: 0 0 2px;
+}
+
+.sec-help {
+  font-size: 12px;
+  color: var(--gray-light);
+  margin: 0 0 14px;
+  max-width: 72ch;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+/* ── big-picture tiles ─────────────────────────────────────────────────────── */
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.tile {
+  border: 1px solid var(--gray);
+  background: var(--panel);
+  padding: 14px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tile-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--gray-light);
+}
+
+.tile-value {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+
+.tile-sub  { font-size: 11px; color: var(--gray-light); line-height: 1.45; }
+
+.tile.t-customers .tile-value { color: var(--offwhite); }
+.tile.t-ordered   .tile-value { color: var(--teal); }
+.tile.t-suggest   .tile-value { color: var(--magenta); }
+.tile.t-liked     .tile-value { color: var(--green); }
+
+/* ── bars (funnel + topics) ────────────────────────────────────────────────── */
+
+.bar-list { display: flex; flex-direction: column; gap: 10px; }
+
+.bar-line {
+  display: grid;
+  grid-template-columns: 170px 1fr 92px;
+  gap: 12px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.bar-name { color: var(--offwhite); }
+.bar-track { height: 18px; background: color-mix(in srgb, var(--gray) 45%, transparent); position: relative; }
+.bar-fill  { display: block; height: 100%; background: var(--teal); min-width: 2px; }
+.bar-num   { text-align: right; font-variant-numeric: tabular-nums; color: var(--gray-light); }
+.bar-num b { color: var(--offwhite); }
+
+.drop {
+  grid-column: 2 / -1;
+  font-size: 10.5px;
+  color: var(--orange);
+  margin-top: -6px;
+}
+
+/* ── tables ────────────────────────────────────────────────────────────────── */
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--gray); }
+
+table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 640px; }
+
+th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray-light);
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--gray);
+  background: var(--panel);
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+th button {
+  all: unset;
+  cursor: pointer;
+  color: inherit;
+}
+th button:hover, th button[aria-sort] { color: var(--offwhite); }
+th button:focus-visible { outline: 2px solid var(--magenta); outline-offset: 2px; }
+
+td {
+  padding: 8px 10px;
+  border-bottom: 1px solid color-mix(in srgb, var(--gray) 45%, transparent);
+  vertical-align: middle;
+}
+tr:last-child td { border-bottom: none; }
+
+.muted { color: var(--gray-mid); }
+.cat   { display: block; font-size: 10px; color: var(--gray-mid); }
+
+.like {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.like-bar { width: 54px; height: 6px; background: color-mix(in srgb, var(--gray) 60%, transparent); }
+.like-bar i { display: block; height: 100%; background: var(--green); }
+.like.low { opacity: 0.55; }
+.like.bad .like-bar i { background: var(--orange); }
+
+.pill {
+  font-size: 9.5px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border: 1px solid var(--gray-mid);
+  color: var(--gray-light);
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+/* ── compare + callouts ────────────────────────────────────────────────────── */
+
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.compare-card {
+  border: 1px solid var(--gray);
+  background: var(--panel);
+  padding: 14px;
+}
+.compare-card .tile-value { font-size: 26px; }
+.compare-card.hi   { border-color: var(--green); }
+.compare-card.warn { border-color: var(--orange); }
+
+.callout {
+  border-left: 2px solid var(--magenta);
+  padding: 4px 0 4px 12px;
+  font-size: 12px;
+  color: var(--gray-light);
+  margin-top: 12px;
+}
+.callout b { color: var(--offwhite); }
+
+.qlist { list-style: none; margin: 0; padding: 0; border: 1px solid var(--gray); }
+.qlist li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--gray) 45%, transparent);
+}
+.qlist li:last-child { border-bottom: none; }
+.qlist .q { color: var(--offwhite); }
+
+.empty {
+  border: 1px dashed var(--gray-mid);
+  padding: 22px;
+  color: var(--gray-light);
+  font-size: 13px;
+  margin-top: 24px;
+}
+.empty ol { margin: 10px 0 0; padding-left: 20px; }
+.empty code { color: var(--yellow); }
+
+/* ── responsive ────────────────────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .tiles   { grid-template-columns: repeat(2, 1fr); }
+  .two-col { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .page    { padding-inline: 16px; }
+  .tiles   { grid-template-columns: 1fr; }
+  .compare { grid-template-columns: 1fr; }
+  .bar-line { grid-template-columns: 1fr auto; gap: 4px 10px; }
+  .bar-line .bar-name { grid-column: 1 / -1; }
+  .bar-line .bar-track { grid-column: 1; }
+  .drop { grid-column: 1 / -1; margin-top: 0; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="head">
+    <span class="brand"><span class="b1">[SAVORA]</span> <span class="b2">INSIGHTS</span></span>
+    <div class="head-right">
+      <div class="toggle" role="group" aria-label="Which data to show">
+        <button type="button" id="src-live" data-source="live" aria-pressed="true">REAL</button>
+        <button type="button" id="src-demo" data-source="demo" aria-pressed="false">DEMO</button>
+      </div>
+      <span id="updated">loading…</span>
+      <a class="nav-link" id="kitchen-link" href="/dashboard.html">KITCHEN BOARD</a>
+      <a class="nav-link" href="/">MENU</a>
+    </div>
+  </header>
+
+  <div id="banner"></div>
+  <main id="root"></main>
+
+</div>
+<script src="insights.js?v=1"></script>
+</body>
+</html>

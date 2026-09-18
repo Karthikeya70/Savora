@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+requests
+pydantic
+python-dotenv
+sqlalchemy
+psycopg2-binary
+sentence-transformers
+numpy

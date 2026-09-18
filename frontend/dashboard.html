@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savora — Kitchen Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ── base ──────────────────────────────────────────────────────────────────── */
+:root {
+  --offblack:     #0e0c0c;
+  --offwhite:     #e3e1df;
+  --magenta:      #e53aa3;
+  --magenta-dark: #ab3470;
+  --yellow:       #ffd84d;
+  --orange:       #ff8a1f;
+  --maroon:       #921231;
+  --green:        #4eea3a;
+  --teal:         #4dd0e1;
+  --gray:         #555;
+  --gray-light:   #999;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--offblack);
+  color: var(--offwhite);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+a { color: var(--offwhite); text-decoration: underline; }
+a:hover { color: var(--magenta); text-decoration: none; }
+
+/* ── layout ────────────────────────────────────────────────────────────────── */
+
+.dash-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px 32px;
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dash-brand {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.dash-brand .b-savora  { color: var(--magenta); }
+.dash-brand .b-kitchen { color: var(--orange); }
+
+.dash-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+}
+
+.live-dot { color: var(--green); font-weight: 700; }
+
+#last-updated { color: var(--gray-light); }
+
+.back-link {
+  font-size: 11px;
+  color: var(--gray-light);
+  text-decoration: none;
+  border: 1px solid var(--gray);
+  padding: 4px 10px;
+  letter-spacing: 0.5px;
+}
+.back-link:hover { color: var(--offwhite); border-color: var(--offwhite); }
+
+/* ── kanban board ──────────────────────────────────────────────────────────── */
+
+.kanban {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.kanban-col { display: flex; flex-direction: column; gap: 10px; }
+
+.kanban-col-header {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 7px 12px;
+  border: 1px solid var(--gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-h-pending   { border-color: var(--yellow); color: var(--yellow); }
+.col-h-confirmed { border-color: var(--teal);   color: var(--teal); }
+.col-h-preparing { border-color: var(--orange);  color: var(--orange); }
+.col-h-ready     { border-color: var(--green);   color: var(--green); }
+
+.col-count { font-size: 20px; font-weight: 700; }
+
+.col-empty {
+  font-size: 12px;
+  color: var(--gray);
+  padding: 16px 12px;
+  text-align: center;
+  border: 1px dashed var(--gray);
+}
+
+/* ── order cards ───────────────────────────────────────────────────────────── */
+
+.order-card {
+  border: 1px solid var(--gray);
+  padding: 12px;
+  font-size: 13px;
+}
+
+.card-pending   { border-color: var(--yellow); background: color-mix(in srgb, var(--yellow) 5%, transparent); }
+.card-confirmed { border-color: var(--teal);   background: color-mix(in srgb, var(--teal) 4%, transparent); }
+.card-preparing { border-color: var(--orange); background: color-mix(in srgb, var(--orange) 5%, transparent); }
+.card-ready     { border-color: var(--green);  background: color-mix(in srgb, var(--green) 5%, transparent); }
+
+.card-id {
+  font-size: 10px;
+  color: var(--gray-light);
+  margin-bottom: 6px;
+}
+
+.card-customer {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.card-name  { font-weight: 700; color: var(--offwhite); }
+.card-table { font-size: 12px; color: var(--gray-light); flex-shrink: 0; }
+
+.card-items {
+  border-top: 1px solid color-mix(in srgb, var(--gray) 50%, transparent);
+  padding-top: 8px;
+  margin-bottom: 8px;
+}
+
+.card-item { font-size: 12px; padding: 2px 0; }
+.item-cust { color: var(--gray-light); font-size: 11px; }
+
+.card-note {
+  font-size: 11px;
+  color: var(--gray-light);
+  border-left: 2px solid var(--orange);
+  padding: 2px 0 2px 8px;
+  margin-bottom: 8px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.card-total { font-weight: 700; color: var(--yellow); font-size: 14px; }
+.card-time  { font-size: 11px; color: var(--gray-light); }
+
+.card-actions { display: flex; flex-direction: column; gap: 6px; }
+
+.card-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-btn-primary {
+  background: var(--magenta);
+  color: var(--offwhite);
+}
+.card-btn-primary:hover    { background: var(--magenta-dark); }
+.card-btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.card-btn-cancel {
+  background: transparent;
+  border: 1px solid var(--maroon);
+  color: var(--maroon);
+}
+.card-btn-cancel:hover    { background: color-mix(in srgb, var(--maroon) 15%, transparent); color: var(--offwhite); }
+.card-btn-cancel:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* ── waiting badge ─────────────────────────────────────────────────────────── */
+
+.card-wait {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 2px 7px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.wait-ok      { color: var(--gray-light); }
+.wait-warning { color: var(--orange); border: 1px solid var(--orange); }
+.wait-urgent  { color: var(--maroon); border: 1px solid var(--maroon); font-weight: 700; animation: pulse-urgent 1.2s ease-in-out infinite; }
+@keyframes pulse-urgent { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+/* ── history log ───────────────────────────────────────────────────────────── */
+
+.dash-history {
+  margin-top: 28px;
+  border-top: 1px solid var(--gray);
+  padding-top: 16px;
+}
+
+.history-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gray-light);
+  margin-bottom: 10px;
+}
+
+.history-row {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  padding: 5px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--gray) 30%, transparent);
+  align-items: center;
+  flex-wrap: wrap;
+}
+.history-row:last-child { border-bottom: none; }
+
+.hist-id    { color: var(--gray-light); }
+.hist-name  { font-weight: 700; flex: 1; min-width: 70px; }
+.hist-table { color: var(--gray-light); }
+.hist-total { color: var(--yellow); }
+.hist-time  { color: var(--gray-light); }
+
+.hist-status {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.hs-completed { color: var(--green); }
+.hs-cancelled { color: var(--maroon); }
+
+/* ── responsive ────────────────────────────────────────────────────────────── */
+
+@media (max-width: 960px) {
+  .kanban { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .kanban { grid-template-columns: 1fr; }
+  .dash-page { padding: 14px 14px 24px; }
+}
+</style>
+</head>
+<body>
+<div class="dash-page">
+
+  <header class="dash-header">
+    <div class="dash-brand">
+      <span class="b-savora">[SAVORA]</span>
+      <span class="b-kitchen"> KITCHEN</span>
+    </div>
+    <div class="dash-meta">
+      <span class="live-dot">● LIVE</span>
+      <span id="last-updated">loading…</span>
+      <a href="/insights.html" class="back-link" id="insights-link">INSIGHTS</a>
+      <a href="/" class="back-link">← MENU</a>
+    </div>
+  </header>
+
+  <div class="kanban" id="kanban">
+    <!-- rendered by dashboard.js -->
+  </div>
+
+  <div class="dash-history" id="history" hidden></div>
+
+</div>
+<script src="dashboard.js?v=3"></script>
+</body>
+</html>
