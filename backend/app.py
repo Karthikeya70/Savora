@@ -58,12 +58,39 @@ def _load_models():
     """Runs in a thread — keeps the event loop free during startup."""
     global dish_index
     init_db()
+    if os.environ.get("SEED_DEMO_DATA") == "1":
+        _seed_demo_data()
     embeddings.embed("warmup")
     dish_index = DishIndex(menu.get("dishes", []))
     logger.info(
         "Ready — %d dishes indexed, DB tables verified, embedding model loaded",
         len(menu.get("dishes", [])),
     )
+
+
+def _seed_demo_data():
+    """
+    On a hosted demo the database starts empty, so the Insights page would have
+    nothing to show a visitor. With SEED_DEMO_DATA=1, fill in practice data once
+    (clearly labelled DEMO, never mixed with real visits). Skipped if it's
+    already there.
+    """
+    import importlib.util
+    from .database import Event, SessionLocal
+
+    db = SessionLocal()
+    try:
+        if db.query(Event.id).filter(Event.source == "demo").first():
+            return
+    finally:
+        db.close()
+
+    path = Path(__file__).resolve().parent.parent / "scripts" / "demo_data.py"
+    spec = importlib.util.spec_from_file_location("demo_data", path)
+    demo = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(demo)
+    added = demo.generate()
+    logger.info("Seeded %d demo events for the Insights page", added)
 
 
 @asynccontextmanager

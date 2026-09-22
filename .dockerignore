@@ -1,0 +1,11 @@
+# Keep secrets and local-only files out of the server image.
+.env
+*.db
+.git
+.claude
+__pycache__/
+*.py[cod]
+logs/*.jsonl
+archive/
+Savora_Menu_Catalog.pdf
+analysis/results_live.md

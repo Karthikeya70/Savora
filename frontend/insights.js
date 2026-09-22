@@ -14,6 +14,7 @@
 const SECRET  = new URLSearchParams(location.search).get("secret") || "";
 const STORE   = "savora_insights_source";
 const REFRESH = 20000;
+const MIN_REAL_VISITORS = 20;   // below this, open on DEMO for first-time viewers
 
 let source = "live";
 let timer  = null;
@@ -294,6 +295,13 @@ async function load() {
       document.getElementById("root").innerHTML = "";
       return;
     }
+    // Until there are enough real visitors for the numbers to mean anything, a
+    // first-time viewer sees the practice data instead. It is clearly labelled
+    // DEMO, the viewer can switch to REAL any time, and the choice isn't saved.
+    if (!viewerChose && data.source === "live" && data.headline.customers < MIN_REAL_VISITORS) {
+      setSource("demo", false);
+      return;
+    }
     render(data);
   } catch {
     document.getElementById("banner").innerHTML =
@@ -301,9 +309,15 @@ async function load() {
   }
 }
 
-function setSource(next) {
+// True once the viewer has picked REAL or DEMO themselves.
+let viewerChose = false;
+
+function setSource(next, remember = true) {
   source = next;
-  try { localStorage.setItem(STORE, next); } catch { /* private mode */ }
+  if (remember) {
+    viewerChose = true;
+    try { localStorage.setItem(STORE, next); } catch { /* private mode */ }
+  }
   document.querySelectorAll(".toggle button").forEach(b =>
     b.setAttribute("aria-pressed", String(b.dataset.source === next)));
   load();
@@ -319,5 +333,6 @@ if (SECRET) {
 
 let saved = null;
 try { saved = localStorage.getItem(STORE); } catch { /* private mode */ }
-setSource(saved === "demo" ? "demo" : "live");
+viewerChose = saved === "demo" || saved === "live";
+setSource(saved === "demo" ? "demo" : "live", false);
 timer = setInterval(load, REFRESH);

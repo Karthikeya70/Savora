@@ -229,6 +229,24 @@ def clear_demo(db) -> int:
     return n
 
 
+def generate(customers: int = 600, days: int = 14, seed: int = 42) -> int:
+    """Replace all demo data with `customers` pretend visitors. Returns events added."""
+    init_db()
+    db = SessionLocal()
+    try:
+        clear_demo(db)
+        rng     = random.Random(seed)
+        bad_day = (datetime.utcnow() - timedelta(days=min(4, days - 1))).date()
+        rows    = []
+        for _ in range(customers):
+            rows.extend(one_customer(rng, days, bad_day))
+        db.add_all(rows)
+        db.commit()
+        return len(rows)
+    finally:
+        db.close()
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--customers", type=int, default=600, help="how many pretend customers (default 600)")
@@ -237,28 +255,24 @@ def main():
     ap.add_argument("--clear", action="store_true", help="only remove demo data")
     args = ap.parse_args()
 
-    init_db()
+    if args.clear:
+        init_db()
+        db = SessionLocal()
+        try:
+            print(f"Removed {clear_demo(db)} demo events.")
+        finally:
+            db.close()
+        return
+
+    added = generate(args.customers, args.days, args.seed)
     db = SessionLocal()
     try:
-        removed = clear_demo(db)
-        print(f"Removed {removed} old demo events.")
-        if args.clear:
-            return
-
-        rng     = random.Random(args.seed)
-        bad_day = (datetime.utcnow() - timedelta(days=min(4, args.days - 1))).date()
-        rows    = []
-        for _ in range(args.customers):
-            rows.extend(one_customer(rng, args.days, bad_day))
-        db.add_all(rows)
-        db.commit()
-
         live = db.query(Event).filter(Event.source == "live").count()
-        print(f"Added {len(rows)} demo events from {args.customers} pretend customers.")
-        print(f"Real (live) events untouched: {live}.")
-        print("Open http://127.0.0.1:8000/insights.html and switch to DEMO to see them.")
     finally:
         db.close()
+    print(f"Added {added} demo events from {args.customers} pretend customers.")
+    print(f"Real (live) events untouched: {live}.")
+    print("Open http://127.0.0.1:8000/insights.html and switch to DEMO to see them.")
 
 
 if __name__ == "__main__":

@@ -454,7 +454,9 @@ async function ask(question, silent = false) {
 
     if (res.status === 429) {
       thinking.remove();
-      addMessage("bot", "You're sending messages too quickly — please wait a moment and try again.");
+      let reason = "You're sending messages too quickly. Please wait a moment and try again.";
+      try { reason = (await res.json()).error || reason; } catch { /* keep default */ }
+      addMessage("bot", reason);
       return;
     }
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
