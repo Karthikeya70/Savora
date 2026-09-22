@@ -2,6 +2,8 @@
 
 **Know what's in your food before you order it.**
 
+**Project page and live dashboard:** https://karthikeya70.github.io/Savora/
+
 Savora is a chat assistant for a restaurant menu. Instead of reading every dish
 description, you just ask:
 
