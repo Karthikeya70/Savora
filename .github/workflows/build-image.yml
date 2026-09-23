@@ -45,5 +45,3 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ steps.name.outputs.image }}:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
