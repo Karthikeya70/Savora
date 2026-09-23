@@ -1,0 +1,49 @@
+# Builds the app into a ready-to-run package and publishes it to GitHub's own
+# package store, so a host like Azure can pull and run it.
+#
+# Runs automatically on every push to main, and can be started by hand from the
+# Actions tab. Nothing here needs a password: GitHub gives the job a temporary
+# one of its own.
+
+name: Build app image
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "analysis/**"
+      - "**.md"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sign in to GitHub's package store
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Package names can't contain capital letters, but usernames can.
+      - name: Work out the package name
+        id: name
+        run: echo "image=ghcr.io/$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')/savora" >> "$GITHUB_OUTPUT"
+
+      - name: Build and publish
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ steps.name.outputs.image }}:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
